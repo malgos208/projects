@@ -1,0 +1,115 @@
+body
+{
+    background-color: white;
+    font-family: 'Lato', sans-serif;
+	overflow-x: hidden;
+	margin: 0;
+	padding: 0;
+	font-size: 17px;
+	
+}
+
+#menu
+{
+    background-color: #303030;
+	color: #ffffff;
+	top: 0;
+    left: 0;
+	position: fixed; /*przesuwanie razem ze scrollowaniem*/
+    z-index: 110; /*kolejność wzdłuż osi z (przykrywa inne)*/
+    width: 100%;
+	
+	opacity: 0.9;
+}
+
+#stronatytulowa
+{
+	position:relative;
+	width:100%;
+}
+ 
+#zdj
+{
+	width: 100%;
+	opacity: 80%;
+}
+
+#napistytulowy
+{
+	position:absolute;
+	font-size: 25px;
+	top: 300px;
+	font-family: 'Lato', sans-serif;
+	align-left: center;
+	color: #616161;
+	background-color: white;
+	border: medium solid white;
+	border-radius: 0.7em; /*zaokrąglenie obramowania*/
+	opacity: 0.7;
+	padding: 35px;
+	z-index: 108;
+	left: 200px;
+}
+
+a{color: gray;}
+    a:link {text-decoration: none}
+    a:visited {text-decoration: none}
+    a:active {text-decoration: none}
+    a:hover {text-decoration: noone}
+	
+.option
+{
+    float: right;
+    min-width: 50px;
+    height: 20px;
+    font-size: 18px;
+    padding: 20px;
+    border-right: 2px solid #444444;
+    opacity: 0.8;
+}
+ 
+.option:hover
+{
+    background-color: #000000;
+    cursor: pointer;
+}
+
+
+
+#content
+{
+    float: center;
+    padding: 20px;
+	padding-left: 105px;
+	padding-right: 105px;
+	margin: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+    background-color: #dedede;
+    min-height: 2000px;
+    text-align: justify;
+}
+
+.artykul 
+{
+	display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    margin-bottom: 4.2em;
+}
+	
+.zdjecie 
+{
+	padding: 10 px;
+	text-align: left;
+	width:650px;
+	
+}
+	
+  .tekst 
+ {
+	padding: 10px;
+	font-size: 17px;
+	text-align: justify;
+}
+
