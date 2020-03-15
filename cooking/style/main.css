@@ -1,0 +1,282 @@
+html{
+    scroll-behavior: smooth; /*płynniejsze przejście*/
+}
+
+
+* {
+  box-sizing: border-box; /*padding and border are included in the width and height*/
+}
+
+body
+{
+    background-color: white;
+    font-family: 'Lato', sans-serif;
+	overflow-x: hidden;
+	margin: 0;
+	padding: 0;
+	font-size: 17px;
+	
+}
+
+
+
+
+
+.nav{
+    width: 100%;
+    font-size: 20px;
+    text-align: right;
+    position: sticky;
+    top: 0;
+    z-index: 500;
+    color: rgb(49, 49, 49);
+}
+
+
+
+.logo{
+	transform: rotate(-2deg);
+	color: white;
+	font-weight: 700;
+	font-size: 50px;
+}
+
+
+.c-nav_list {
+  margin-right: 15px;
+}
+
+.c-nav_item {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.l-header {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.h-header-top ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.h-header-top li {
+    padding-left: 2em;
+    display: inline-block;
+    margin: 0;
+}
+
+.h-header-top li a {
+    color: white;
+    text-decoration: none;
+    
+}
+
+.h-header-top li a:hover {
+	font-weight: 700;
+    color: rgb(230, 138, 0);/*pomarańczowy*/
+}
+
+.h-header-top a{
+    text-decoration: none;
+}
+
+
+
+.chief{
+	color: rgb(230, 138, 0);
+	size: 30px;
+	font-weight: 700;
+}
+
+.pizza {
+	width: 100%;
+	position: relative;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	z-index: -1;
+}
+
+.pizza-main {
+	background-image: url("../img/background.jpg");
+	height: 100%;
+}
+
+.h-header-top {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	z-index: 99;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
+	background-color: rgba(34, 40, 49, 0.4);
+	box-shadow: 10px 20px 30px #181c22;/*cień pod głównym menu*/
+	font-size: 1.2em;
+	color: #f9f9f9;
+}
+
+
+.more{
+    box-sizing: border-box;
+    padding: 0.8em 1.3em;
+    background-color: rgb(255, 120, 11);
+    border-radius: 10px;
+    font-size: 1.3em;
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    top: 65%;
+    left: 30%;
+}
+
+.more:hover{
+    background-color: rgba(255, 80, 11, 0.95);
+	text-decoration: none;
+	color: white;
+}
+
+
+#about{
+	overflow: hidden; /*ukryte przesuwanie*/
+    position: relative;
+	width: 100vw;
+    background-color: rgb(27, 40, 49);
+    color: white;
+	margin: 0;
+	padding: 0;
+    padding-top: 100px;
+    padding-bottom: 100px;
+	
+}
+
+
+.text{
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    font-weight: 400;
+	font-size: 23px;
+    padding: 50px;    
+	padding-bottom: 100px;
+}
+
+
+.card-container{
+	text-align: center;
+	padding: 80px;
+    display: grid;
+	justify-content: center;
+	align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+	
+}
+
+table {
+	width: 40vw;
+	height: 1250px;
+	border-radius: 30px;
+	border-spacing: 1em;
+	border-collapse: collapse;
+	border: 4px solid gray;
+	border-collapse: separate;
+}
+
+th{
+	height: 20px;
+}
+
+td{
+	vertical-align: top;
+}
+
+table img{
+	width: 100%;
+}
+
+
+.meal{
+	font-size: 25px;
+	font-weight: 700;
+}
+
+.ingredients{        /*lewa kolumna-zmienione style, waga i rozmiar*/
+	font-size: 15px;
+	font-weight: 550;
+	text-align: left;
+	font-style: oblique;
+}
+
+
+.vege{
+	color: 	#86be2f;
+}
+
+.vegetable{
+	color: rgb(230, 138, 0);
+}
+		
+
+footer {
+  background-color: #181c22;
+  margin: 0;
+  padding: 30px;
+  height: 80px;
+  color: #f9f9f9;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+footer a:hover{
+	text-decoration: none;
+	font-weight: 600;
+	color: white;
+}
+
+.sources{
+    margin: 0;
+    padding: 0;
+}
+
+footer p{
+    display: inline;
+    padding-right: 1em;
+    padding-left: 1em;
+    border-right: white solid 1px;
+}
+
+footer a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+#last{
+    border-right: none;
+}
+
+#foot{
+    display: inline;
+    font-size: 35px;
+    text-align: right;
+}
+
+
+
+
+
+
+
+
+
+
+
