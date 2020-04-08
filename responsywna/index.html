@@ -1,0 +1,234 @@
+<html lang="pl">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--kontroluje poziom zbliżenia po załadowaniu strony-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>master!RWD</title>
+	<meta name="description" content="Wszystko o tworzeniu responsywnych stron internetowych!" />
+    <meta name="keywords" content="RWD, responsywność, " /> <!-- ułatwia wyszukiwanie strony -->
+
+    <link rel="stylesheet" href="style/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Chango" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Bowlby One SC" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Sofia" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <!--podpięcie biblioteki jquery-->
+	<script src="jquery.scrollTo.min.js"></script>
+	
+	<script>
+		
+		jQuery(function($)
+		{
+			//zresetuj scrolla
+			$.scrollTo(0);
+			
+			$('#link1').click(function() { $.scrollTo($('#source'), 800); });
+			
+			
+	
+			$('.scrollup').click(function() { $.scrollTo($('body'), 1000); });
+		}
+		);
+		
+		//pokaż podczas przewijania
+		$(window).scroll(function()
+		{
+			if($(this).scrollTop()>300) $('.scrollup').fadeIn();
+			else $('.scrollup').fadeOut();		
+		}
+		);
+	
+	
+	</script>
+		
+</head>
+
+<body>
+    <!-- header -->
+	<a href="#" class="scrollup"></a>
+	
+
+    <header class="l-header">
+	
+        <div class="c-imgbackground c-imgbackground--main"></div>
+        <div class="h-header-top">
+            <!-- navbar -->
+            <a href="index.html" class="c-logo"><span class="c-logo__span">master!</span>RWD</a>
+
+            <!-- hamburger -->
+			<div class="menu-btn">
+				<div class="menu-btn"></div>
+			</div>
+			
+			
+            <button class="c-hamburger">
+                <span class="c-hamburger__box">
+                    <span class="c-hamburger__inner"></span>
+                </span>
+            </button>
+
+            <nav class="c-nav">
+                <ul class="c-nav__list">
+                    <li class="c-nav__item"><a  href="">HOME</a></li>
+                    <li class="c-nav__item"><a href="podstrony/porady.html">PORADY</a></li>
+                    <li class="c-nav__item"><a href="podstrony/praktyka.html">PRAKTYKA</a></li>
+					<li class="c-nav__item"><a id="link1" href="#">ŹRÓDŁA</a></li>
+                </ul>
+            </nav>
+			
+        </div>
+		
+    </header>
+	
+
+			<section class="one">
+				<div class="text">
+				
+				
+			            <br><br><br>
+						<span class="sectiontitle">Dobre praktyki responsywnych stron</span>
+						<p><br>Responsywna strona www – czym jest i o co tyle hałasu?
+						<br>Jeszcze kilka lat temu strona internetowa powinna tylko dobrze wyświetlać się na komputerach. Chociaż z internetu na urządzeniach mobilnych korzystamy od 20 lat, to strony na telefon zaczęły się pojawiać częściej dziesięć lat temu.
+						Dzisiaj, gdy ponad 60% ruchu w internecie pochodzi z urządzeń mobilnych – trzeba pójść krok dalej. Tym krokiem jest responsywna strona www. Wyświetli się dobrze na każdym urządzeniu – od małego wyświetlacza telefonu aż do wielkiego telewizora. Responsywna strona www pomaga docierać do nowych użytkowników. Zobacz jak dużo możesz zyskać dzięki stronie responsywnej.
+
+						Strona responsywna - co to jest?
+						Responsywna strona internetowa to wolne tłumaczenie Responsive Web Design (czyli RWD). To strona, która dostosowuje się do rozmiaru wyświetlacza (czyli odpowiada szybko na jego potrzeby) i dobrze prezentuje treść strony www.
+				</div>
+			
+			
+				<img src="img/background2.jpg" class="img3"></img>
+						
+			    <div class="text">
+						<span class="sectiontitle">Strona responsywna - co to jest?</span>
+						<p><br>Responsywna strona internetowa to wolne tłumaczenie Responsive Web Design (czyli RWD). To strona, która dostosowuje się do rozmiaru wyświetlacza (czyli odpowiada szybko na jego potrzeby) i dobrze prezentuje treść strony www.
+
+						<p>Obsługa responsywności strony odbywa się przy użyciu media queries na stronie www. Rozpoznają rozdzielczość przeglądarki i pokazują w niej właściwy arkusz stylu. Dzięki temu strona responsywna wygląda dobrze na każdym ekranie.
+						Jeśli nie masz pewności, czy jakaś strona jest responsywna, wystarczy że wejdziesz na nią korzystając ze smartphone’a lub tabletu.
+						Musisz powiększać jej elementy – strona nie jest responsywna. Wszystko ładnie się skaluje – właściciel strony zrobił dobrą robotę.
+						<br><br><br><br><br><br><br><br><br><br><br><br><br>
+			
+				</div>
+			</section>
+			
+			<section class="two">
+				<br><br><br><br><br>
+			<img src="img/photo1.1.jpg"></img>
+				<div class="text">
+						
+						<span class="sectiontitle">Nowoczesna strona www – responsywna?</span>
+						
+						<p><br>
+						Pod koniec ubiegłego roku wymienialiśmy strony responsywne jako jeden z najgorętszych trendów w projektowaniu stron www. Po niedawnej „rewolucji mobilnej” Google’a ten trend staje się standardem tworzenia stron internetowych. Między innymi dlatego projektowanie stron internetowych się zmienia. Teraz zaczyna się często od stworzenia wersji mobilnej, a nie – jak do tej pory – wersji na komputery. Jeszcze trzy lata temu takie podejście uważało za fanaberię. Obecnie staje się ono standardem. Jednym z wyznaczników profesjonalnej strony internetowej jest jej responsywność.
+
+						<p>RWD podwyższa dostępność strony www i ułatwia użytkownikom korzystanie z niej. Mnie osobiście bardzo to cieszy. Dzięki takiemu podejściu w projektowaniu stron internetowych mogę szybciej łatwiej znajduję informacje. Nie muszę włączać komputera. Wystarczy, że wyciągnę telefon i mam to, czego szukam – zaprezentowane na stronach, które dobrze wyświetlają się na smartphone’ie.
+						Jeszcze kilka lat temu musiałbym powiększać i mieć nadzieję, że przeglądarka dobrze ułoży tekst w kolumny. Dzisiaj – to już nie jest problem.
+						<br><br><br><br><br><br><br><br><br><br>
+				</div>
+			
+			</section>	
+				
+			<section class="three">
+				<br><br><br><br><br><br><br><br><br><br><br><br>
+				<img src="img/photo.jpg" class="img4"></img>
+				<div class="text">
+						<span class="sectiontitle">Co daje responsywna strona www?</span>
+						<p><br>Przede wszystkim – ułatwia życie użytkownikom. A przy okazji ułatwia projektowanie stron internetowych. Ale po kolei. Wyższa dostępność i łatwiejsze korzystanie ze stron na urządzeniach mobilnych bardzo się przydaje.
+						Zwłaszcza gdy prowadzisz lokalny biznes (Twoi klienci znajdą Cię w kilka chwil i wszędzie, gdzie mają internet), bloga lub jakiś nieduży serwis. Do tego projektowanie strony www, która jest responsywna, pomaga zmienić podejście do pracy. Gdy pomyślisz o tym, że na ekranie telefonu zmieści się mniej rzeczy, to wybierasz te najważniejsze. Dzięki temu użytkownicy szybciej znajdują informacje, które masz dla nich na swojej stronie. Responsywnej stronie. To może wydawać się wymuszaniem minimalizmu na stronach www, ale w rzeczywistości to bardzo pomaga użytkownikom.
+
+						<p>Gdy wybierzesz najważniejsze rzeczy, które muszą znaleźć się na stronie w „najmniejszym” z widoków (na telefon), może się okazać, że dokładnie tego potrzebuje Twoja strona. Nic więcej. Użytkownicy dostają wtedy od razu to, czego potrzebują, nawet w wersji na komputer. A to przekłada się na niższy współczynnik odrzuceń i lepsze pozycjonowanie strony internetowej. Oraz – co najważniejsze dla Ciebie – na pozyskanie nowych klientów i czytelników.
+				</div>
+			
+			
+				<img src="img/photo8.jpg" class="img2"></img>
+				<div class="text">
+						<br><br><br>
+						<span class="sectiontitle">Czy strona responsywna pomaga w pozycjonowaniu?</span>
+						<p><br>Tak, strona responsywna pomaga w pozycjonowaniu. Potwierdza to Google, potwierdzają to też doświadczenia osób zajmujących się SEO. Jednak nie chodzi tylko o anonimowy (i czasem bezlitosny) algorytm. Responsywna strona www ma sporo zalet, które warto wymienić. Przede wszystkim – projektowanie strony internetowej, która ma być responsywna, wymaga wskazania priorytetów. Wspomniałem o tym w poprzednim akapicie. Dzięki temu strona ma niższy bounce rate (użytkownicy znajdują to, czego potrzebują) i lepiej konwertuje. A to jasna informacja dla BrainRank, że ta strona lepiej odpowiada potrzebom użytkowników. I podnosi jej pozycję w wynikach wyszukiwania Google.
+
+						
+				</div>	
+						
+						<p>
+						<picture>
+						  <source srcset="img/photo12.2.jpg" media="(max-width: 767px)">
+						  <source srcset="img/photo12.jpg">
+						  <img src="img/photo12.jpg" alt="Wenecja">
+						</picture>	
+				<div class="text">
+						<br><br><br>
+						<p>Tworzenie strony responsywnej wymaga też przyłożenia się do jej szybkości. Czyli kompresja grafik, pilnowanie ich rozmiarów i formatów. Google na początku roku zadeklarowało, że będzie wyświetlać wyżej w wynikach wyszukiwania strony responsywne, które szybciej ładują się na urządzeniach mobilnych. Czyli mniej czekania na to, aż załaduje się strona staje się bardzo ważne!
+
+						<p>Do tego dochodzi dopracowanie interfejsu strony (dobre menu strony, dobre wykorzystanie stopki strony i całe tworzenie strony www), który poprawia user experience. A to znowu przekłada się na wyższy czas na stronie.
+						Dobry projekt strony internetowej zakłada użycie nagłówków i uporządkowanie treści. A od tego już tylko krok do wplecenia w całą stronę odpowiednich słów kluczowych. W końcu wszyscy wiemy, jak ważne są słowa kluczowe przy pozycjonowaniu stron internetowych.
+						<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+				</div>
+				
+			</section>
+			
+			<section class="four">
+			<br><br><br>
+				<img src="img/photo17.2.jpg" class="img1" alt="własne zdjęcie kart"></img>
+			
+					<div class="text">	
+					<br><br><br>
+						<span style="color: #75797B"><p><span class="sectiontitle">Co powinna mieć responsywna strona internetowa?</span>
+						<p><br>Pomyśl o stronie responsywnej jak o kilku wersjach tej samej strony. Powinny być spójne między sobą, zachować układ i prezentować te same treści.
+						<p>Przede wszystkim – każdy z widoków powinien być dopracowany. Możesz zrezygnować z bardziej efektownych elementów w widokach mobilnych. Tylko to też może pomóc Ci wybrać rzeczy, które są najważniejsze. Może ta animacja lub grafika na stronie są niepotrzebne?
+						</span>
+						<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+					</div>
+					
+			</section>
+			<section class="five">
+				<picture>
+						  <source srcset="img/photo6.1.jpg" media="(max-width: 767px)">
+						  <source srcset="img/photo6.jpg">
+						  <img src="img/photo6.jpg">
+				</picture>	
+					<div class="text">	
+					<br><br><br>
+						<p>
+						<p>Ważna jest spójność struktury linków. Czyli w każdym widoku hiperłącza powinny odsyłać do tych samych miejsc. To największa przewaga stron responsywnych nad mobilnymi. W przypadku tych drugich w adres strony często poprzedzała litera m. (na przykład: m.strona.pl). Dopóki struktura linków była spójna (strony mobilne odsyłają do mobilnych, a desktopowe do desktopowych) problem nie istnieje. Jednak przeoczenie kilku takich linków znacznie pogarszało user experience i może obniżyć pozycję w wynikach wyszukiwania.
+						<p>Ten problem nie występuje na stronach responsywnych – linki odsyłają do tych samych stron, a przeglądarka wyświetla po prostu wersję dostosowaną do konkretnego ekranu. Warto zainteresować się też procentowymi wielkościami obiektów na stronie, zwłaszcza grafik.
+						<p>Dzięki temu każdy z nich lepiej wypełni konkretny ekran. Przy okazji grafik – strona responsywna, żeby ładować się szybciej, potrzebuje odchudzonych grafik i obiektów wektorowych.
+						Format SVG pomaga zmniejszyć rozmiar strony i przyśpieszyć wczytywanie. Do tego skaluje się bezstratnie! Oczywiście warto pamiętać o kompresji plików jpg.
+					</div>
+					<div class="text">	
+						<p><span class="sectiontitle">Czy trudno zrobić responsywną stronę www?</span>				
+						
+						<p><br>Tak i nie. Jeśli pracujesz na responsywnym szablonie strony www, to temat jest dosyć prosty. Podmieniasz elementy i nie musisz nic robić ponadto.
+						Oczywiście poza utrzymaniem strony i sprawdzeniem, czy wszystko jest OK.
+						Jednak gdy chcesz zrobić stronę responsywną od zera, to możesz stanąć przed sporym wyzwaniem. Zwłaszcza gdy za punkt wyjścia weźmiesz jakiś szablon i musisz stworzyć responsywność dla całej strony, na której znajdą się nowe obiekty. Dodanie responsywności do już istniejącej strony www, zwłaszcza dużej, wymaga na tyle dużo pracy, że czasem lepiej zrobić ją od nowa.
+						<br><br><br><br><br><br><br><br>
+					</div>
+					
+			</section>			
+
+					
+<a id="source"></a>
+	<footer class="c-footer">
+        
+            <ul class="c-footer__list1">
+                <li class="c-footer__item"><a href="https://developers.google.com/web/fundamentals/design-and-ux/responsive?hl=pl"target="blank">source1</a></li>
+                <li class="c-footer__item"><a href="https://webwavecms.com/blog/responsywna-strona-internetowa"target="blank">source2</a></li>
+                <li class="c-footer__item"><a href="https://malgos208.github.io/projects/responsywna/index.html" target="blank">GitHub Pages</a></li>
+            </ul>
+       
+
+        
+            <ul class="c-footer__list2">
+                <li class="c-footer__item"><span class="foot"><span class="foot__span">master!</span>RWD</span></li>
+                <li class="c-footer__item"><p>Copyright &copy 2020 master!RWD</p></li>
+    
+            </ul>
+        
+    </footer>
+	
+	
+	
+
+	<script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+	 <script src="main.js"></script>
+    
+	
+</body>
