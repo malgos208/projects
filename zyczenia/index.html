@@ -1,0 +1,354 @@
+<html lang="pl">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--kontroluje poziom zbliżenia po załadowaniu strony-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>easter!EGG</title>
+	<meta name="description" content="Najlepsze życzenia wielkanocne!" />
+    <meta name="keywords" content="Wielkanoc, życzenia" /> <!-- ułatwia wyszukiwanie strony -->
+
+    <link rel="stylesheet" href="style/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Chango" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Bowlby One SC" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Sofia" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <!--podpięcie biblioteki jquery-->
+	<script src="jquery.scrollTo.min.js"></script>
+	
+	<script>
+		
+		jQuery(function($)
+		{
+			//zresetuj scrolla
+			$.scrollTo(0);
+			
+			$('#link1').click(function() { $.scrollTo($('#home'), 300); });
+			$('#link2').click(function() { $.scrollTo($('#krotkie'), 350); });
+			$('#link3').click(function() { $.scrollTo($('#oficjalne'), 400); });
+			$('#link4').click(function() { $.scrollTo($('#zhumorem'), 450); });
+			
+	
+			$('.scrollup').click(function() { $.scrollTo($('body'), 600); });
+		}
+		);
+		
+		//pokaż podczas przewijania
+		$(window).scroll(function()
+		{
+			if($(this).scrollTop()>300) $('.scrollup').fadeIn();
+			else $('.scrollup').fadeOut();		
+		}
+		);
+	
+	
+	</script>
+		
+</head>
+
+<body>
+    <!-- header -->
+	<a href="#" class="scrollup"></a>
+	
+	<a id="home"></a>
+    <header class="l-header">
+	
+        <div class="c-imgbackground c-imgbackground--main"></div>
+        <div class="h-header-top">
+            <!-- navbar -->
+            <a href="index.html" class="c-logo"><span class="c-logo__span">easter!</span>EGG</a>
+
+            <!-- hamburger -->
+			<div class="menu-btn">
+				<div class="menu-btn"></div>
+			</div>
+			
+			
+            <button class="c-hamburger">
+                <span class="c-hamburger__box">
+                    <span class="c-hamburger__inner"></span>
+                </span>
+            </button>
+
+            <nav class="c-nav">
+                <ul class="c-nav__list">
+                    <li class="c-nav__item"><a id="link1" href="#">HOME</a></li>
+                    <li class="c-nav__item"><a id="link2" href="#">KRÓTKIE</a></li>
+                    <li class="c-nav__item"><a id="link3" href="#">OFICJALNE</a></li>
+					<li class="c-nav__item"><a id="link4" href="#">Z HUMOREM</a></li>
+                </ul>
+            </nav>
+			
+        </div>
+		
+    </header>
+	
+
+			<section class="one">
+				<div class="text">
+					<br><br><br><br>
+					<div class="c-logo"><span class="c-logo__span" style="color: rgb(166, 157, 154)">easter!</span>EGG</div>
+					<br><em>Na tej stronie znajdziesz najlepsze życzenia wielkanocne na każdą sytuację!</em>
+					<br><br><br>
+					<a id="krotkie"></a>
+					<p><span class="sectiontitle">krótkie</span>
+					<br>Życzenia na Wielkanoc Ci składamy
+					<br>Dużo szczęścia i radości,
+					<br>Które niechaj zawsze gości.
+					<br>W dobrym sercu w jasnej duszy.
+					<br>I niech wszystkie żale głuszy.
+
+
+					<p>Jaj przepięknie malowanych
+					<br>Świąt słonecznie roześmianych
+					<br>W poniedziałek dużo wody
+					<br>Zdrowia, szczęścia oraz zgody.
+
+
+					<p>Dzisiaj wstał z grobu Zbawiciel, 
+					<br>Naszego świata Odkupiciel. 
+					<br>Więc niech będzie koniec złemu 
+					<br>i oddajmy hołd nasz Jemu.
+					<br>Dużo radości w dniach Świąt Wielkanocnych.
+					<picture>
+			
+					<p>Radości z tradycji,
+					<br>umocnienia w wierze, 
+					<br>bliskości rodzinnej 
+					<br>i obfitych łask od Chrystusa Zmartwychwstałego 
+					<br>życzy…
+					
+					<p>Oby w tę Wielkanoc 
+					<br>porwały Was latawce radości 
+					<br>ponad codzienność zwyczajnych dni.
+					
+					<p>Spokojnych i pogodnych Świąt Wielkanocnych
+					<br>pełnych miłości i rodzinnego ciepła 
+					<br>życzą…
+
+				
+				</div>
+				<picture>
+						  <source srcset="img/photo10.1.jpg" media="(max-width: 767px)">
+						  <source srcset="img/photo10.jpg">
+						  <img src="img/photo10.jpg" alt="świąteczny stół" class="img3">
+				</picture>
+					
+				<div class="text">	
+					<p>Radosnych świąt Wielkiej Nocy,
+					<br>pełnych miłości i nadziei,
+					<br>a także wielu okazji do miłych spotkań w gronie najbliższych
+					<br>życzy…
+					
+					<p>Alleluja dziś śpiewamy, 
+					<br>Bogu cześć i chwałę dajmy,
+					<br>bo zmartwychwstał nasz Zbawiciel, 
+					<br>tego świata Odkupiciel. 
+					<br>Zdrowia, radości i powodzenia,
+					<br>to są najszczersze moje życzenia.
+
+					<p>Alleluja, Alleluja! 
+					<br>Wesoły nam dziś dzień nastał,
+					<br>Chrystus bowiem zmartwychwstał.
+					<br>Niech zsyła na Was łaski 
+					<br>i wnosi szczęście do Waszego rodzinnego życia.
+					<br><br><br><br><br><br><br><br><br><br><br><br><br>
+				</div>	
+			</section>
+			
+			<section class="two">
+				<div class="text">
+					<br><br><br><br><br><br><br>				
+					<p>Kiedy Wielka Noc nastanie,
+					<br>życzę Wam na Zmartwychwstanie 
+					<br>dużo szczęścia i radości, 
+					<br>które niechaj zawsze gości, 
+					<br>w jasnej duszy,
+					<br>niech wszystkie żale zagłuszy.
+					
+					<p>Niech istota Świąt Wielkanocnych
+					<br>napełni Was siłą oraz radością 
+					<br>i sprawi, że uśmiech i optymizm 
+					<br>będą towarzyszyły Wam każdego dnia.
+					
+					<p>Obfitych łask i błogosławieństw,
+					<br>od Chrystusa Zmartwychwstałego
+					<br>oraz pełnych pokoju Świąt Wielkanocnych,
+					<br>z radosnym Alleluja życzy...
+					
+					<br><br><br><br><br><br>
+
+				</div>	
+			</section>
+			
+			<section class="three">
+				<div class="text">
+				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+					<a id="oficjalne"></a>
+					<p><span class="sectiontitle">oficjalne</span>
+					<br>Niech wielka tajemnica Zmartwychwstania 
+					<br>będzie okazją do zadumy i wzmocni Waszą wiarę! 
+					<br>Z okazji świąt Wielkiej Nocy 
+					<br>życzymy miłości, pokoju i pięknego czasu spędzonego w rodzinnym gronie. 
+					<br>Wesołego Alleluja życzą...
+
+					<p>Niech te Święta Wielkanocne będą pełne nadziei i wiary,
+					<br>Niech Chrystus Zmartwychwstały przyniesie
+					<br>wiosenne kwiaty radości, miłości, spokoju i szczęścia.
+					<br>Ciepłych, pełnych radosnej nadziei Świąt Zmartwychwstania Pańskiego,
+					<br>rodzinnego ciepła i radosnych spotkań przy wielkanocnym stole.
+
+					<p>Na radosne Święta Zmartwychwstania Pańskiego - 
+					<br>zwycięstwa Chrystusa Pana nad śmiercią, 
+					<br>piekłem i szatanem - składamy serdeczne życzenia. 
+					<br>Niech Chrystus Pan otworzy nasze oczy i serca, 
+					<br>napełniając je światłem Zmartwychwstania, 
+					<br>pokojem, radością, mocą ducha i wszelkim 
+					<br>dobrem, abyśmy umieli Go rozpoznawać 
+					<br>i o Nim świadczyć w naszym codziennym życiu. 
+				</div>	
+					<picture>
+						  <source srcset="img/photo4.jpg" alt="świąteczny stół" media="(max-width: 767px)">
+						  <source srcset="img/photo14.jpg" alt="wielkanoc">
+						  <img src="img/photo14.jpg"  class="img2">
+					</picture>	
+				<div class="text">	
+					<p>Niech istota Świąt Wielkanocnych 
+					<br>napełni Was siłą oraz radością i sprawi,
+					<br>że uśmiech i optymizm będą towarzyszyły Wam każdego dnia.
+					
+					<p>Radosnych świąt Wielkiej Nocy, 
+					<br>pełnych miłości i nadziei, 
+					<br>a także wielu okazji do miłych spotkań w gronie najbliższych.
+
+					<p>Szczęście nadaje sens życiu, 
+					<br>to magia w Twym sercu zaklęta.
+					<br>Nie pozwól mu zostać w ukryciu,
+					<br>podaruj je bliskim na święta. Wesołych Świąt!
+					
+					<p>Niech radosne Alleluja 
+					<br>będzie dla Was ostoją zwycięskiej miłości i niezłomnej wiary. 
+					<br>Niech pogoda ducha towarzyszy Wam w trudzie każdego dnia, 
+					<br>a radość serca w czasie zasłużonego odpoczynku.
+					<br>Najserdeczniejsze życzenia wielkanocne składa...
+				</div>
+					<picture>				
+						  <source srcset="img/photo11.jpg" media="(max-width: 767px)">
+						  <source srcset="img/photo7.jpg">
+						  <img src="img/photo7.jpg" class="img1">
+					</picture>
+				<div class="text">	
+					<p>Życzę Ci, aby te Święta Wielkanocne przepełnione były pokojem, 
+					<br>miłością i odpoczynkiem w gronie najbliższych.
+					<br>Niech radosny dzień Zmartwychwstania Pańskiego odnowi Twoją wiarę i wniesie nadzieję,
+					<br>a powracająca do życia natura będzie natchnieniem w codziennym życiu.
+					<br>W tym świątecznym czasie przesyłam Ci serdeczne życzenia:
+					<br>Wesołego Alleluja!
+					
+					<p>Z okazji zbliżających się Świąt Wielkanocnych
+					<br>składam wiosenne życzenia, 
+					<br>aby w czas Święta Paschy w Waszych sercach, 
+					<br>rodzinach i domach zagościła radość, spokój
+					<br>i wielka nadzieja odradzającego się życia.
+					
+					<p>Święto Wielkiej Nocy to czas otuchy i nadziei, 
+					<br>czas odradzania się wiary w siłę Chrystusa i w siłę człowieka.
+					<br>Życzę, aby Święta Wielkanocne przyniosły radość, pokój oraz wzajemną życzliwość.
+					<br>By stały się źródłem wzmacniania ducha.Wesołego Alleluja! 
+					<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+				</div>
+			</section>	
+			<section class="four">
+				<div class="text">
+				<br><br><br><br><br><br>
+					<p><span class="sectiontitle">z humorem</span>
+					<a id="zhumorem"></a>
+					<p>Siedzi sobie baran na zielonej łące, 
+					<br>A wkoło hasają wesołe zające,
+					<br>Bawią się i śmieją,
+					<br>w niebo głosy krzyczą,
+					<br>że w te piękne święta radości Ci życzą.
+
+					<p>Wielkanocny zajączek,
+					<br>biegnąc polanami,
+					<br>podrzuca jajkami między kolanami 
+					<br>i tak sobie krzyczy do wszystkich wokoło: 
+					<br>Niech Wam te święta upłyną wesoło!
+					
+					<p>Smacznego jajeczka i kruchego ciasteczka!
+					<br>Wesołego, rodzinnego świętowania i biesiadowania.
+					<br>Pozdrowienia serdeczne - świąteczne!
+
+					<p>Słońca, szczęścia, pomyślności,
+					<br>w pierwsze święto dużo gości,
+					<br>w drugie święto dużo wody
+					<br>- to dla zdrowia i urody!
+					<br>Maluj jajka, święć pisanki,
+					<br>schowaj już do szafy sanki!
+					</div>
+				<picture>
+						  <source srcset="img/photo5.jpg" media="(max-width: 767px)">
+						  <source srcset="img/photo2.jpg">
+						  <img src="img/photo2.jpg" alt="świąteczny stół" class="img2">
+					</picture>
+					
+				<div class="text">
+					<p>Smacznego jajka,
+					<br>w ten świąteczny ranek.
+					<br>A w koszyczku wielkanocnym,
+					<br>samych niespodzianek:)
+					
+					<p>Moc prezentów od zajączka
+					<br>co koszyczek trzyma w rączkach
+					<br>Wielu wrażeń, mokrej głowy
+					<br>w poniedziałek dyngusowy.
+					<br>Życzę jaja święconego
+					<br>i wszystkiego najlepszego
+
+					<p>Aby Wielkanoc w tym właśnie roku,
+					<br>nadeszła z dużym sukcesem u Twego boku,
+					<br>aby życie układało Wam się zdrowo,
+					<br>zarówno prywatnie jak i zawodowo.
+					<br>Jak najwięcej chwil radosnych,
+					<br>i przepięknej wiosny!
+					<br>Życzy...
+					
+					<p>Pogody, słońca, radości,
+					<br>w niedzielę dużo gości,
+					<br>w poniedziałek dużo wody
+					<br>- to dla zdrowia i urody.
+					<br>Dużo jajek kolorowych,
+					<br>Świąt wesołych oraz zdrowych!
+
+					
+					
+					
+					
+					<br><br><br><br><br><br><br><br><br><br>
+			</section>
+			
+			
+					
+
+					
+<a id="source"></a>
+	<footer class="c-footer">
+        
+            <ul class="c-footer__list1">
+                <li class="c-footer__item"><a href=https://poranny.pl/zyczenia-wielkanocne-2020-najpiekniejsze-zyczenia-na-swieta-wielkanocne-wierszyki-rymowanki-krotkie-smieszne-zyczenia-na/ar/c1-14059499" target="blank">source1</a></li>
+                <li class="c-footer__item"><a href="https://parenting.pl/zyczenia-wielkanocne" target="blank">source2</a></li>
+                <li class="c-footer__item"><a href="https://malgos208.github.io/projects/zyczenia/index.html" target="blank">GitHub Pages</a></li>
+            </ul>
+
+            <ul class="c-footer__list2">
+                <li class="c-footer__item"><span class="foot"><span class="foot__span"><span class="c-logo__span">easter!</span>EGG</span></li>
+                <li class="c-footer__item"><p>Copyright &copy 2020 easter!EGG</p></li>
+    
+            </ul>
+        
+    </footer>
+
+	<script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+	 <script src="main.js"></script>
+    
+	
+</body>
