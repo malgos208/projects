@@ -1,0 +1,131 @@
+<html lang="pl">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--kontroluje poziom zbliżenia po załadowaniu strony-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>let'sDRAW</title>
+	<meta name="description" content="Kursy malarskie dla każdego!" />
+    <meta name="keywords" content="digital art, sztuka, malarstwo, kursy" /> <!-- ułatwia wyszukiwanie strony -->
+	<link rel="stylesheet" href="../style/stylekurs.css">
+    <link rel="stylesheet" href="../style/main.css">
+	<link rel="stylesheet" href="../style/style2.css">
+	<link rel="stylesheet" href="../style/style3.css">
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Chango" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Bowlby One SC" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Sofia" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <!--podpięcie biblioteki jquery-->
+	<script src="jquery.scrollTo.min.js"></script>
+	
+	<script>
+		
+		jQuery(function($)
+		{
+			//zresetuj scrolla
+			$.scrollTo(0);
+			
+			$('#link2').click(function() { $.scrollTo($('#onas'), 500); });
+			$('#link3').click(function() { $.scrollTo($('#zapis'), 600); });
+			$('#link4').click(function() { $.scrollTo($('#mentorzy'), 700); });
+			$('.scrollup').click(function() { $.scrollTo($('body'), 1000); });
+		}
+		);
+		
+		//pokaż podczas przewijania
+		$(window).scroll(function()
+		{
+			if($(this).scrollTop()>300) $('.scrollup').fadeIn();
+			else $('.scrollup').fadeOut();		
+		}
+		);
+	
+	
+	</script>
+	
+	<style>
+	
+
+.fab{
+	line-height: 40px;
+}
+</style>
+		
+</head>
+
+<body>
+    <!-- header -->
+	<a href="#" class="scrollup"></a>
+	
+    <header class="l-header">
+	
+        
+        <div class="h-header-top">
+            <!-- navbar -->
+            <a href="index.html" class="c-logo"><span class="c-logo__span">let's!</span><span class="neon">DRAW</span></a>
+
+            <!-- hamburger -->
+			<div class="menu-btn">
+				<div class="menu-btn"></div>
+			</div>
+			
+			
+            <button class="c-hamburger">
+                <span class="c-hamburger__box">
+                    <span class="c-hamburger__inner"></span>
+                </span>
+            </button>
+
+            <nav class="c-nav">
+                <ul class="c-nav__list">
+                    <li class="c-nav__item"><a href="#">HOME</a></li>
+					<li class="c-nav__item"><a  href="podstrony/galeria">GALERIA</a></li>
+                </ul>
+            </nav>
+			
+        </div>
+		
+    </header>
+  <body>
+<div class="login-box">
+  <h1>Login</h1>
+  <div class="textbox">
+    <i class="fas fa-user"></i>
+    <input type="text" placeholder="Username">
+  </div>
+
+  <div class="textbox">
+    <i class="fas fa-lock"></i>
+    <input type="password" placeholder="Password">
+  </div>
+
+  <input type="button" class="btn" value="Sign in">
+</div>
+  
+
+
+<footer class="c-footer">
+        
+            <ul class="c-footer__list1">
+                <li class="c-footer__item"><a href="https://malgos208.github.io/projects/forms/index.html" target="blank">GitHub Pages</a></li>
+            </ul>
+       
+
+        
+            <ul class="c-footer__list2">
+                <li class="c-footer__item"><div class="foot"><span class="foot__span">let's!</span>DRAW</div></li>
+                <li class="c-footer__item"><p>Copyright &copy 2020 let's!DRAW</p></li>
+    
+            </ul>
+        
+    </footer>
+	
+	
+	
+
+	<script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+	 <script src="../main.js"></script>	
+</body>
+</html>

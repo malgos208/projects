@@ -1,0 +1,209 @@
+<html lang="pl">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--kontroluje poziom zbliżenia po załadowaniu strony-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>let'sDRAW</title>
+	<meta name="description" content="Kursy malarskie dla każdego!" />
+    <meta name="keywords" content="digital art, sztuka, malarstwo, kursy" /> <!-- ułatwia wyszukiwanie strony -->
+	<link rel="stylesheet" href="../style/stylezapis.css">
+    <link rel="stylesheet" href="../style/main.css">
+	<link rel="stylesheet" href="../style/style2.css">
+	<link rel="stylesheet" href="../style/style3.css">
+	
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Chango" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Bowlby One SC" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Sofia" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <!--podpięcie biblioteki jquery-->
+	<script src="../jquery.scrollTo.min.js"></script>
+	
+	<script>
+		
+		jQuery(function($)
+		{
+			//zresetuj scrolla
+			$.scrollTo(0);
+			
+			$('#link2').click(function() { $.scrollTo($('#onas'), 500); });
+			$('#link3').click(function() { $.scrollTo($('#zapis'), 600); });
+			$('#link4').click(function() { $.scrollTo($('#mentorzy'), 700); });
+			$('.scrollup').click(function() { $.scrollTo($('body'), 200); });
+		}
+		);
+		
+		//pokaż podczas przewijania
+		$(window).scroll(function()
+		{
+			if($(this).scrollTop()>300) $('.scrollup').fadeIn();
+			else $('.scrollup').fadeOut();		
+		}
+		);
+	
+	
+	</script>
+	<script>
+	
+	$("input, select, textarea, form, button").css("outline", "none");
+$("input, select, textarea, form, button").css("box-shadow", "none");
+
+</script>
+
+	
+	<style>
+.fab{
+	line-height: 40px;
+}
+
+
+.l-header {
+    height: auto;
+	}
+	
+.text{
+	text-align: center;
+}
+
+.contact-section{
+  background: url(../img/background1.2.jpg) no-repeat center;
+  background-size: cover;
+  }
+
+</style>
+		
+</head>
+
+<body>
+    <!-- header -->
+	<a href="#" class="scrollup"></a>
+	
+    <header class="l-header">
+	
+        
+        <div class="h-header-top">
+            <!-- navbar -->
+            <a href="index.html" class="c-logo"><span class="c-logo__span">let's!</span><span class="neon">DRAW</span></a>
+
+            <!-- hamburger -->
+			<div class="menu-btn">
+				<div class="menu-btn"></div>
+			</div>
+			
+			
+            <button class="c-hamburger">
+                <span class="c-hamburger__box">
+                    <span class="c-hamburger__inner"></span>
+                </span>
+            </button>
+
+            <nav class="c-nav">
+                <ul class="c-nav__list">
+                    <li class="c-nav__item"><a href="../index.html">HOME</a></li>
+					<li class="c-nav__item"><a  href="../podstrony/galeria.html">GALERIA</a></li>
+					<li class="c-nav__item"><a  href="../podstrony/kontakt.html">KONTAKT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+<div class="contact-section">
+
+	<br><br><br><br>
+	<h1><mark>Zapisz się na kurs</mark></h1>
+	<div class="text"><p><br><b>Na podstawie Państwa odpowiedzi do 20.07.2020 r. zostanie opracowny i opublikowany harmonogram zajęć dla kursów odbywających się w okresie 27.07.2020 - 17.08.2020 r. oraz lista przyjętych osób.</b></div>
+	<div class="border"></div>
+	
+	
+	<form class="contact-form" action="../podstrony/greetings.html" method="post">
+
+    <input type="text" class="contact-form-text" placeholder="Imię (pole wymagane)" required>
+	<input type="text" class="contact-form-text" placeholder="Nazwisko (pole wymagane)" required>
+	<div class="container1">
+	Płeć
+<label class="container">mężczyzna
+  <input type="radio" checked="checked" name="radio">
+  <span class="check"></span>
+</label>
+<label class="container">kobieta
+  <input type="radio" name="radio">
+  <span class="check"></span>
+</label>
+</div>
+    <input type="text" class="contact-form-text" placeholder="Telefon kontaktowy (pole wymagane)" required>
+	<input type="email" class="contact-form-text" placeholder="Email (pole wymagane)"required>
+<!--
+	<select id="city" required>
+		<option value="" selected disabled>Wybierz miasto, w którym odbędzie się kurs</option>
+		<option value="warszawa" class="contact-form-text" >Warszawa</option>
+		<option value="poznan" class="contact-form-text">Poznań</option>
+		<option value="krakow"class="contact-form-text">Kraków</option>
+		<option value="wroclaw" class="contact-form-text">Wrocław</option>
+	</select>-->
+
+
+	<p><select id="teacher" required>
+		<option value="" selected disabled>Wybierz typ zajęć i prowadzącego (pole wymagane)</option>
+		<option value="ElizaBergiel" class="contact-form-text">malarstwo tradycyjne - Eliza Bergiel</option>
+		<option value="DylanWeeks" class="contact-form-text">malarstwo  tradycyjne - Dylan Weeks</option>
+		<option value="JosuDumaisANDTylerBlack" class="contact-form-text">malarstwo  tradycyjne - Josu Dumais  &  Tyler Black</option>
+		<option value="DylanWeeks"class="contact-form-text">malarstwo digitalowe - Dylan Weeks</option>
+		<option value="BrandonOrzechowsky"class="contact-form-text">malarstwo digitalowe - Brandon Orzechowsky</option>
+		<option value="JosuDumaisANDTylerBlack"class="contact-form-text">malarstwo digitalowe - Josu Dumais  &  Tyler Black</option>
+	</select>
+	
+	<p><select id="level" required>
+		<option value="" selected disabled>Wybierz swój poziom zaawansowania (pole wymagane)</option>
+		<option value="low" class="contact-form-text">początkujący</option>
+		<option value="middle" class="contact-form-text">średnio zaawansowany</option>
+		<option value="high" class="contact-form-text">zaawansowany</option>
+	</select>
+    <textarea class="contact-form-text" placeholder="Wpis swoje uwagi dotyczące kursu"></textarea>
+	
+	<p>
+	<input type="checkbox" checked="checked">
+	<span class="checkmark">Chcę otrzymywać informacje handlowe na podany adres email oraz numer telefonu. Wyrażam zgodę na przetwarzanie moich danych osobowych w celach marketingowych.</span>
+	<p><br>
+	
+    <p><input type="submit" class="contact-form-btn" value="Wyślij">
+	<br><br><br><input type="reset" class="contact-form-btn" value="Wyczyść wszystko">
+	<br><br>
+	
+  </form>
+  
+  
+</div>
+<div class="text">
+<br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
+
+
+<footer class="c-footer">
+        
+            <ul class="c-footer__list1">
+                <li class="c-footer__item"><a href="https://malgos208.github.io/projects/forms/index.html" target="blank">GitHub Pages</a></li>
+            </ul>
+       
+
+        
+            <ul class="c-footer__list2">
+                <li class="c-footer__item"><div class="foot"><span class="foot__span">let's!</span>DRAW</div></li>
+                <li class="c-footer__item"><p>Copyright &copy 2020 let's!DRAW</p></li>
+    
+            </ul>
+        
+    </footer>
+	
+	
+	
+
+	<script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+	 <script src="../main.js"></script>
+	 
+	
+	
+    
+	
+</body>
+</html>

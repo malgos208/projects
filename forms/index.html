@@ -1,0 +1,238 @@
+<html lang="pl">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--kontroluje poziom zbliżenia po załadowaniu strony-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>let'sDRAW</title>
+	<meta name="description" content="Kursy malarskie dla każdego!" />
+    <meta name="keywords" content="digital art, sztuka, malarstwo, kursy" /> <!-- ułatwia wyszukiwanie strony -->
+
+    <link rel="stylesheet" href="style/main.css">
+	<link rel="stylesheet" href="style/style2.css">
+	<link rel="stylesheet" href="style/style3.css">
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Chango" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Bowlby One SC" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Sofia" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <!--podpięcie biblioteki jquery-->
+	<script src="jquery.scrollTo.min.js"></script>
+	
+	<script>
+		
+		jQuery(function($)
+		{
+			//zresetuj scrolla
+			$.scrollTo(0);
+			
+			$('#link2').click(function() { $.scrollTo($('#onas'), 500); });
+			$('#link3').click(function() { $.scrollTo($('#zapis'), 600); });
+			$('#link4').click(function() { $.scrollTo($('#mentorzy'), 700); });
+			$('.scrollup').click(function() { $.scrollTo($('body'), 1000); });
+		}
+		);
+		
+		//pokaż podczas przewijania
+		$(window).scroll(function()
+		{
+			if($(this).scrollTop()>300) $('.scrollup').fadeIn();
+			else $('.scrollup').fadeOut();		
+		}
+		);
+	
+	
+	</script>
+	
+	<style>
+	
+
+.fab{
+	line-height: 40px;
+}
+</style>
+		
+</head>
+
+<body>
+    <!-- header -->
+	<a href="#" class="scrollup"></a>
+	
+    <header class="l-header">
+	
+        <div class="c-imgbackground c-imgbackground--main"></div>
+        <div class="h-header-top">
+            <!-- navbar -->
+            <a href="index.html" class="c-logo"><span class="c-logo__span">let's!</span><span class="neon">DRAW</span></a>
+
+            <!-- hamburger -->
+			<div class="menu-btn">
+				<div class="menu-btn"></div>
+			</div>
+			
+			
+            <button class="c-hamburger">
+                <span class="c-hamburger__box">
+                    <span class="c-hamburger__inner"></span>
+                </span>
+            </button>
+
+            <nav class="c-nav">
+                <ul class="c-nav__list">
+                    <li class="c-nav__item"><a href="#">HOME</a></li>
+                    <li class="c-nav__item"><a id="link2" href="#">O NAS</a></li>
+                    <li class="c-nav__item"><a id="link3" href="#">ZAPIS</a></li>
+					<li class="c-nav__item"><a id="link4" href="#">MENTORZY</a></li>
+					<li class="c-nav__item"><a  href="podstrony/galeria.html">GALERIA</a></li>
+					<li class="c-nav__item"><a  href="podstrony/kontakt.html">KONTAKT</a></li>
+                </ul>
+            </nav>
+			
+        </div>
+		
+    </header>
+			<a id="onas"></a>
+			<div class="text">
+				<p class="sectiontitle">Trzecia edycja darmowych kursów rysowniczych z let's!DRAW</p>
+				
+				
+				<p>Oferujemy kursy zarówno online jak i na zajęciach w pracowni. Kursy prowadzone są przez wykwalifikowanych nauczycieli, którzy mają duże doświadczenie w swojej dziedzinie. Nasze kursy obejmują <h2 style="text-align: center; font-size: 1.2em">malarstwo tradycyjne, ale także digital painting</h2> Każdy kurs odbywa się w wymiarze 48 godzin (16 zajęć po 3 godziny). Oferujemy różnorodne możliwości. Poziom kursu jest do uzgodnienia, toteż nie ma znaczenia, czy dopiero zaczynasz przygodę ze sztuką, czy chcesz rozwinąć już posiadane umiejętności. <img class="imgleft" src="img/photo1.jpg">
+				<p>Wszystkie kursy są odpowiednie zarówno dla hobbystów, kandydatów na kierunki studiów związane z grafiką i malarstwem, a także osób pragnących pracować w przyszłości jako profesjonalni ilustratorzy i concept artyści. Zajęcia prowadzone są z podziałem na różne kategorie wiekowe. Zapraszamy wszsytkich od 10 roku życia!
+				<br><p><b>Jak wygląda kurs online?</b>
+				<p>Spotykasz się z prowadzącym online 1 na 1 lub w grupie. Prowadzicie rozmowę za pomocą Google Hangouts. Zarówno Ty jak i mentor widzicie równocześnie podgląd swojego ekranu.
+				<p>Pojedyncze zajęcia z mentorem trwają 3 godziny zegarowe. W tym czasie możesz obserwować mentora podczas pracy, a on Ciebie dając Ci w tym czasie cenne wskazówki. Mentor może również robić na żywo korektę Twoich prac.
+				<p>Po lekcji online dostajesz zadanie domowe. Pomiędzy zajęciami jesteś w kontakcie z mentorem i możesz w każdej chwili do niego napisać po poradę.
+										
+	
+						<p><p><p><p>
+			</div>
+			<a id="zapis"></a>
+			<div class="button">		
+				<a href="podstrony/zapis.html">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					zapisz się na kurs
+				</a>	
+			</div>
+			
+			<div class="text">			
+				<p class="sectiontitle">Poznaj naszych mentorów</p>
+				<p>Nasi mentorzy są pełni pasji i zapału. Stosują ciekawe, niekonwencjonalne metody prowadzenia zajęć, dzięki którym wiele się nauczysz i z pewnością nie będziesz się nudzić!
+			
+			</div>
+			
+	<!--TEACHERS-->	
+			<a id="mentorzy"></a>	
+			<div class="team-section">
+        
+
+        <div class="person">
+            <img src="img/teacher1.jpg" alt="" class="person-pic">
+            <div class="person-info">
+                <h2>Eliza Bergiel</h2>
+				<span class="work">malarstwo tradycyjne</span>
+                <span class="opis">
+				<p>artystyczna dusza,
+				<br>pozytywnie zakręcona,
+				<br>miłośniczka sztuki </span>
+                <div class="socialmedia">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="person">
+            <img src="img/teacher2.jpg" alt="" class="person-pic">
+            <div class="person-info">
+                <h2>Dylan Weeks</h2>
+                <span class="work">malarstwo tradycyjne i digitalowe</span>
+				<span class="opis">
+				<p>artysta z powołania,
+				<br>kreatywny,
+				<br>niezwykle cierpliwy
+				</span>
+				
+                <div class="socialmedia">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+		
+		<div class="person">
+            <img src="img/teacher3.jpg" alt="" class="person-pic">
+            <div class="person-info">
+                <h2>Brandon Orzechowsky</h2>
+                <span class="work">digital painting</span>
+				<span class="opis">
+				<p>wyluzowany,
+				<br>pomysłowy,
+				<br>zwycięzca międzynarodowego konkursu 
+				<br>graficznego Fotolia TEN
+				</span>
+				
+                <div class="socialmedia">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="person">
+            <img src="img/teacher4.jpg" alt="" class="person-pic">
+            <div class="person-info">
+                <h2>Josu Dumais  &  Tyler Black</h2>
+                <span class="work">malarstwo tradycyjne i digitalowe</span>
+				<span class="opis">
+				<p>oryginalni,
+				<br>pomysłowi,
+				<br>prowadzą nietypowe zajęcia
+				</span>
+                <div class="socialmedia">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	<div class="text">
+	<br><br><br><br><br><br><br><br>
+	</div>
+				
+
+	<footer class="c-footer">
+        
+            <ul class="c-footer__list1">
+                <li class="c-footer__item"><a href="https://malgos208.github.io/projects/forms/index.html" target="blank">GitHub Pages</a></li>
+            </ul>
+       
+
+        
+            <ul class="c-footer__list2">
+                <li class="c-footer__item"><div class="foot"><span class="foot__span">let's!</span>DRAW</div></li>
+                <li class="c-footer__item"><p>Copyright &copy 2020 let's!DRAW</p></li>
+            </ul>
+        
+    </footer>
+	
+	
+	
+
+	<script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+	 <script src="main.js"></script>
+    
+	
+</body>
+</html>

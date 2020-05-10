@@ -1,0 +1,527 @@
+<html lang="pl">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--kontroluje poziom zbliżenia po załadowaniu strony-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>let'sDRAW/kontakt</title>
+	<meta name="description" content="Kursy malarskie dla każdego!" />
+    <meta name="keywords" content="digital art, sztuka, malarstwo, kursy" /> <!-- ułatwia wyszukiwanie strony -->
+	<link rel="stylesheet" href="../style/stylegaleria.css">
+	<link rel="stylesheet" href="../style/stylekontakt.css">
+   <link rel="stylesheet" href="../style/main.css">
+	<link rel="stylesheet" href="../style/style2.css">
+	<link rel="stylesheet" href="../style/style3.css">
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Chango" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Bowlby One SC" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Sofia" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <!--podpięcie biblioteki jquery-->
+	<script src="../jquery.scrollTo.min.js"></script>
+	
+	<script>
+		
+		jQuery(function($)
+		{
+			//zresetuj scrolla
+			$.scrollTo(0);
+			
+			$('#link2').click(function() { $.scrollTo($('#onas'), 500); });
+			$('#link3').click(function() { $.scrollTo($('#zapis'), 600); });
+			$('#link4').click(function() { $.scrollTo($('#mentorzy'), 700); });
+			$('.scrollup').click(function() { $.scrollTo($('body'), 1000); });
+		}
+		);
+		
+		//pokaż podczas przewijania
+		$(window).scroll(function()
+		{
+			if($(this).scrollTop()>300) $('.scrollup').fadeIn();
+			else $('.scrollup').fadeOut();		
+		}
+		);
+	
+	
+	</script>
+	
+	<style>
+.fab{
+	line-height: 40px;
+}
+
+
+.l-header {
+    height: auto;
+	}
+
+</style>
+		
+</head>
+
+<body>
+    <!-- header -->
+	<a href="#" class="scrollup"></a>
+	
+    <header class="l-header">
+	
+        
+        <div class="h-header-top">
+            <!-- navbar -->
+            <a href="index.html" class="c-logo"><span class="c-logo__span">let's!</span><span class="neon">DRAW</span></a>
+
+            <!-- hamburger -->
+			<div class="menu-btn">
+				<div class="menu-btn"></div>
+			</div>
+			
+			
+            <button class="c-hamburger">
+                <span class="c-hamburger__box">
+                    <span class="c-hamburger__inner"></span>
+                </span>
+            </button>
+
+            <nav class="c-nav">
+                <ul class="c-nav__list">
+                    <li class="c-nav__item"><a href="../index.html">HOME</a></li>
+					<li class="c-nav__item"><a  href="">GALERIA</a></li>
+					<li class="c-nav__item"><a  href="../podstrony/kontakt.html">KONTAKT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+	
+
+	<h1><mark>Galeria prac naszych uczniów</mark>
+	
+	<div class="border"></div></h1>
+  <div class="container">
+
+    <div class="gallery-container w-3 h-2">
+      <div class="gallery-item">
+        <div class="image">
+          <img src="../img/photo1.jpg" alt="praca ucznia">
+        </div>
+
+        <div class="overlay"> <div class="text">Julian Kamiński</div></div>
+      </div>
+    </div>
+
+    <div class="gallery-container w-3 h-3">
+      <div class="gallery-item">
+        <div class="image">
+          <img src="../img/g8.jpg" alt="praca ucznia">
+        </div>
+        <div class="overlay"> <div class="text">Alex Malinowski</div></div>
+      </div>
+    </div>
+
+    <div class="gallery-container h-3 w-2">
+      <div class="gallery-item">
+        <div class="image">
+          <img src="../img/g47.png" alt="praca ucznia">
+        </div>
+        <div class="overlay"> <div class="text">Julian Kamiński</div></div>
+      </div>
+    </div>
+
+    <div class="gallery-container">
+      <div class="gallery-item">
+        <div class="image">
+          <img src="../img/photo5.jpg" alt="praca ucznia">
+        </div>
+        <div class="overlay"> <div class="text">Julian Kamiński</div></div>
+      </div>
+    </div>
+
+    
+
+    <div class="gallery-container w-2">
+      <div class="gallery-item">
+        <div class="image">
+          <img src="../img/photo4.jpg" alt="praca ucznia">
+        </div>
+        <div class="overlay"> <div class="text">Julian Kamiński</div></div>
+      </div>
+    </div>
+
+<div class="gallery-container h-3 w-2">
+      <div class="gallery-item">
+        <div class="image">
+          <img src="../img/g2.jpg" alt="praca ucznia">
+        </div>
+        <div class="overlay"> <div class="text">Julia Mazur</div></div>
+      </div>
+    </div>	
+    
+    
+	<div class="gallery-container h-3 w-2">
+      <div class="gallery-item">
+        <div class="image">
+          <img src="../img/g45.jpg" alt="praca ucznia">
+        </div>
+        <div class="overlay"> <div class="text">Julia Mazur</div></div>
+      </div>
+    </div>
+<div class="gallery-container h-3 w-2">
+      <div class="gallery-item">
+        <div class="image">
+          <img src="../img/g7.jpg" alt="praca ucznia">
+        </div>
+        <div class="overlay"> <div class="text">Gabriela Kowalczyk</div></div>
+      </div>
+    </div>
+	
+	
+	<div class="gallery-container w-2 h-2">
+      <div class="gallery-item">
+        <div class="image">
+          <img src="../img/g58.png" alt="praca ucznia">
+        </div>
+        <div class="overlay"> <div class="text">Tomasz Król</div></div>
+      </div>
+    </div>
+	
+
+
+	
+	<div class="gallery-container h-2 w-2">
+      <div class="gallery-item">
+        <div class="image">
+          <img src="../img/g61.jpg" alt="praca ucznia">
+        </div>
+        <div class="overlay"> <div class="text">Tomasz Król</div></div>
+      </div>
+    </div>
+	
+	<div class="gallery-container w-4 h-2">
+      <div class="gallery-item">
+        <div class="image">
+          <img src="../img/g59.jpg" alt="praca ucznia">
+        </div>
+		<div class="overlay"> <div class="text">Agata Stypa</div> </div>
+      </div>
+    </div>
+	
+	
+	<div class="gallery-container w-2 h-3">
+      <div class="gallery-item">
+        <div class="image">
+          <img src="../img/g1.jpg" alt="praca ucznia">
+        </div>
+        <div class="overlay"> <div class="text">Alicja Kowalewska</div></div>
+      </div>
+    </div>
+	
+	
+	
+	
+	
+	<div class="gallery-container w-2 h-1">
+      <div class="gallery-item">
+        <div class="image">
+          <img src="../img/g69.jpg" alt="praca ucznia">
+        </div>
+        <div class="overlay"> <div class="text">Anna Piątek</div></div>
+      </div>
+    </div>
+	
+	<div class="gallery-container w-2 h-2">
+      <div class="gallery-item">
+        <div class="image">
+          <img src="../img/g4.jpg" alt="praca ucznia">
+        </div>
+        <div class="overlay"> <div class="text">Alicja Kowalewska</div></div>
+      </div>
+    </div>
+	
+	
+	
+	<div class="gallery-container w-2 h-3">
+      <div class="gallery-item">
+        <div class="image">
+          <img src="../img/g21.jpg" alt="praca ucznia">
+        </div>
+        <div class="overlay"> <div class="text">Julia Mazur</div></div>
+      </div>
+    </div>
+	
+	<div class="gallery-container w-2 h-2">
+      <div class="gallery-item">
+        <div class="image">
+          <img src="../img/g5.jpg" alt="praca ucznia">
+        </div>
+        <div class="overlay"> <div class="text">Amelia Makowska</div></div>
+      </div>
+    </div>
+	
+	<div class="gallery-container w-1 h-3">
+      <div class="gallery-item">
+        <div class="image">
+          <img src="../img/g20.jpg" alt="praca ucznia">
+        </div>
+        <div class="overlay"> <div class="text">Laura Sak</div></div>
+      </div>
+    </div>
+	
+	<div class="gallery-container w-2 h-3">
+      <div class="gallery-item">
+        <div class="image">
+          <img src="../img/g41.jpg" alt="praca ucznia">
+        </div>
+        <div class="overlay"> <div class="text">Zuzia Bartłomiejczyk</div></div>
+      </div>
+    </div>
+	
+	<div class="gallery-container w-3 h-2">
+      <div class="gallery-item">
+        <div class="image">
+          <img src="../img/g9.jpg" alt="praca ucznia">
+        </div>
+        <div class="overlay"> <div class="text">Marta Sokołowska</div></div>
+      </div>
+    </div>
+	
+	<div class="gallery-container w-2 h-3">
+      <div class="gallery-item">
+        <div class="image">
+          <img src="../img/g10.jpg" alt="praca ucznia">
+        </div>
+        <div class="overlay"> <div class="text">Anita Gajewska</div></div>
+      </div>
+    </div>
+	
+	<div class="gallery-container w-3 h-4">
+      <div class="gallery-item">
+        <div class="image">
+          <img src="../img/g25.jpg" alt="praca ucznia">
+        </div>
+        <div class="overlay"> <div class="text">Ilona Czarnecka</div></div>
+      </div>
+    </div>
+	
+	<div class="gallery-container w-1 h-4">
+      <div class="gallery-item">
+        <div class="image">
+          <img src="../img/g63.jpg" alt="praca ucznia">
+        </div>
+        <div class="overlay"> <div class="text">Alicja Tyl</div></div>
+      </div>
+    </div>
+	
+	<div class="gallery-container w-2 h-4">
+      <div class="gallery-item">
+        <div class="image">
+          <img src="../img/g60.jpg" alt="praca ucznia">
+        </div>
+        <div class="overlay"> <div class="text">Nina Malczak</div></div>
+      </div>
+    </div>
+	
+	<div class="gallery-container w-2 h-2">
+      <div class="gallery-item">
+        <div class="image">
+          <img src="../img/g12.jpg" alt="praca ucznia">
+        </div>
+        <div class="overlay"> <div class="text">Przemek Jaskólski</div></div>
+      </div>
+    </div>
+	
+	<div class="gallery-container w-4 h-2">
+      <div class="gallery-item">
+        <div class="image">
+          <img src="../img/g11.jpg" alt="praca ucznia">
+        </div>
+        <div class="overlay"> <div class="text">Miłosz Orłowski</div></div>
+      </div>
+    </div>
+	
+	
+	
+	<div class="gallery-container w-2 h-3">
+      <div class="gallery-item">
+        <div class="image">
+          <img src="../img/g13.jpg" alt="praca ucznia">
+        </div>
+        <div class="overlay"> <div class="text">Wiktoria Zabrzeg</div></div>
+      </div>
+    </div>
+	
+	<div class="gallery-container w-2 h-2">
+      <div class="gallery-item">
+        <div class="image">
+          <img src="../img/g15.jpg" alt="praca ucznia">
+        </div>
+        <div class="overlay"> <div class="text">Hubert Póro</div></div>
+      </div>
+    </div>
+	
+	<div class="gallery-container w-2 h-3">
+      <div class="gallery-item">
+        <div class="image">
+          <img src="../img/g14.jpg" alt="praca ucznia">
+        </div>
+        <div class="overlay"> <div class="text">Tomasz Książek</div></div>
+      </div>
+    </div>
+	
+	<div class="gallery-container w-2 h-2">
+      <div class="gallery-item">
+        <div class="image">
+          <img src="../img/g49.jpg" alt="praca ucznia">
+        </div>
+        <div class="overlay"> <div class="text">Sara Orzechowska</div></div>
+      </div>
+    </div>
+	
+	<div class="gallery-container w-2 h-2">
+      <div class="gallery-item">
+        <div class="image">
+          <img src="../img/g33.jpg" alt="praca ucznia">
+        </div>
+        <div class="overlay"> <div class="text">Kasia Polak</div></div>
+      </div>
+    </div>
+	
+	<div class="gallery-container w-1 h-3">
+      <div class="gallery-item">
+        <div class="image">
+          <img src="../img/g48.png" alt="praca ucznia">
+        </div>
+        <div class="overlay"> <div class="text">Patryk Kot</div></div>
+      </div>
+    </div>
+	
+	<div class="gallery-container w-1 h-3">
+      <div class="gallery-item">
+        <div class="image">
+          <img src="../img/g17.jpg" alt="praca ucznia">
+        </div>
+        <div class="overlay"> <div class="text">Eliza Ross</div></div>
+      </div>
+    </div>
+	
+	
+	<div class="gallery-container w-1 h-2">
+      <div class="gallery-item">
+        <div class="image">
+          <img src="../img/g50.jpg" alt="praca ucznia">
+        </div>
+        <div class="overlay"> <div class="text">Alicja Tyl</div></div>
+      </div>
+    </div>
+	
+	<div class="gallery-container w-2 h-3">
+      <div class="gallery-item">
+        <div class="image">
+          <img src="../img/g65.jpg" alt="praca ucznia">
+        </div>
+        <div class="overlay"> <div class="text">Małgosia Stypa</div></div>
+      </div>
+    </div>
+	
+	
+	
+	<div class="gallery-container w-3 h-2">
+      <div class="gallery-item">
+        <div class="image">
+          <img src="../img/g30.jpg" alt="praca ucznia">
+        </div>
+        <div class="overlay"> <div class="text">Oliwa Stankiewicz</div></div>
+      </div>
+    </div>
+	
+	<div class="gallery-container w-1 h-1">
+      <div class="gallery-item">
+        <div class="image">
+          <img src="../img/g32.jpg" alt="praca ucznia">
+        </div>
+        <div class="overlay"> <div class="text">Patryk Lipski</div></div>
+      </div>
+    </div>
+	
+	
+	<div class="gallery-container w-3 h-3">
+      <div class="gallery-item">
+        <div class="image">
+          <img src="../img/g34.jpg" alt="praca ucznia">
+        </div>
+        <div class="overlay"> <div class="text">Szymon Burza</div></div>
+      </div>
+    </div>
+	
+	<div class="gallery-container w-1 h-4">
+      <div class="gallery-item">
+        <div class="image">
+          <img src="../img/g68.jpg" alt="praca ucznia">
+        </div>
+        <div class="overlay"> <div class="text">Asia Kowal</div></div>
+      </div>
+    </div>
+
+	<div class="gallery-container w-2 h-3">
+      <div class="gallery-item">
+        <div class="image">
+          <img src="../img/g31.jpg" alt="praca ucznia">
+        </div>
+        <div class="overlay"> <div class="text">Kacper Sikora</div></div>
+      </div>
+    </div>
+	
+	<div class="gallery-container w-1 h-2">
+      <div class="gallery-item">
+        <div class="image">
+          <img src="../img/g64.jpg" alt="praca ucznia">
+        </div>
+        <div class="overlay"> <div class="text">Małgosia Stypa</div></div>
+      </div>
+    </div>
+	
+	<div class="gallery-container w-1 h-1">
+      <div class="gallery-item">
+        <div class="image">
+          <img src="../img/g46.jpg" alt="praca ucznia">
+        </div>
+        <div class="overlay"> <div class="text">Adam Kubieniec</div></div>
+      </div>
+    </div>
+	
+	
+	
+	
+	
+	
+	<p><p><br><br><br><br><br><br><br><br><br><br>
+	
+
+
+  </div>
+  
+  
+  
+  
+  <footer class="c-footer">
+	
+        
+            <ul class="c-footer__list1">
+                <li class="c-footer__item"><a href="https://malgos208.github.io/projects/forms/index.html" target="blank">GitHub Pages</a></li>
+            </ul>
+      
+        
+            <ul class="c-footer__list2">
+                <li class="c-footer__item"><div class="foot"><span class="foot__span">let's!</span>DRAW</div></li>
+                <li class="c-footer__item"><p>Copyright &copy 2020 let's!DRAW</p></li>
+    
+            </ul>
+        
+    </footer>
+	
+	
+	<script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+	 <script src="../main.js"></script>
+
+    
+
+</body>
+</html>

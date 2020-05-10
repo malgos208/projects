@@ -1,0 +1,217 @@
+form{
+	color: #ffff;
+    font-family: Calibri, Helvetica, sans-serif;
+	padding-left: 15px;  
+    margin-right: 10px;  
+	
+}
+
+label{
+	margin: 16px 0;
+  border: 0;
+    display: inline-block;  
+    cursor: pointer; 
+    position: relative;  
+    padding-left: 15px;  
+    margin-right: 10px;  
+    font-size: 0.9em;  
+	
+  }
+ 
+.container1{
+	background: #111;
+	border-radius: 15px;
+	padding: 10 40px;
+	font-family: Calibri, Helvetica, sans-serif;
+	color:#757575;
+ }
+ /*sprawdzic-------*/
+ .container1:focus{
+	   box-shadow: 0 0 10px 4px #fed539;
+ }
+	 
+/* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  color:#757575;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+
+}
+
+/* Create a custom radio button */
+.check {
+  position: absolute;
+  top: 0;
+  left: 9;
+  height: 16px;
+  width: 16px;
+  background-color: #111;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .check {
+  background-color: #757575;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .check {
+  background-color: #fed539;
+  box-shadow: 0 0 10px 4px #fed539;
+  
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.check:after {
+  content: "";
+  position: absolute;
+  display: none;
+  
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .check:after {
+  display: block;
+ 
+ 
+}
+
+/* Style the indicator (dot/circle) */
+.container .check:after {
+ 	top: 4px;
+	left: 4px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background:#111;
+	
+}
+
+ mark{ /*zapisz sie na kurs*/
+ background-color: rgba(254, 213, 57, .8);
+ line-height: 2em;
+ border-radius: 15px;
+ padding: 10px;
+} 
+
+
+ 
+select{
+	width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+box-sizing: border-box;
+}
+
+.section{
+	background-color: black;
+	padding: 10px;
+}
+
+.contact-section{
+ 
+  padding: 40px 0;
+  z-index: 9999;
+ 
+}
+.contact-section h1{
+  text-align: center;
+  color: #ddd;
+}
+.border{
+  border-radius: 5px; 
+  width: 100px;
+  height: 10px;
+  background: #fed539;
+  margin: 40px auto; 
+}
+
+
+.contact-form{
+  max-width: 600px;
+  margin: auto;
+  padding: 0 10px;
+  overflow: hidden;
+ 
+}
+
+.contact-form-text{
+	border-radius: 10px;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 16px 0;
+  border: 0;
+  background: #111;
+  padding: 20px 40px;
+  outline: none;
+  color: #ddd;
+  transition: 0.5s;
+  
+}
+.contact-form-text:focus{
+  box-shadow: 0 0 10px 4px #fed539;
+}
+textarea.contact-form-text{
+  resize: none;
+  height: 120px;
+}
+.contact-form-btn{
+  float: right;
+  border: 0;
+  background: #fed539;
+  color: #fff;
+  padding: 12px 50px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.contact-form-btn:hover{
+    box-shadow: 0 0 10px 4px #fed539;
+}
+
+
+ *:focus {
+   outline: 0;
+ }
+ 
+
+  
+option:focus{
+  box-shadow: 0 0 10px 4px #fed539;
+
+}
+
+
+select{
+	 border-radius: 10px;
+	 background:  #111;
+	 border: 0;
+	 color: #757575;
+	 height: 50px;
+	 margin: 0;
+  padding: 0 40px;
+}
+select option:first-child{color: white}
+
+select:focus{
+box-shadow: 0 0 10px 4px #fed539;
+
+
+
+

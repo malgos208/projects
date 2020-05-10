@@ -1,0 +1,150 @@
+<html lang="pl">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--kontroluje poziom zbliżenia po załadowaniu strony-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>let'sDRAW/kontakt</title>
+	<meta name="description" content="Kursy malarskie dla każdego!" />
+    <meta name="keywords" content="digital art, sztuka, malarstwo, kursy" /> <!-- ułatwia wyszukiwanie strony -->
+	<link rel="stylesheet" href="../style/stylekontakt.css">
+   <link rel="stylesheet" href="../style/main.css">
+	<link rel="stylesheet" href="../style/style2.css">
+	<link rel="stylesheet" href="../style/style3.css">
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Chango" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Bowlby One SC" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Sofia" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <!--podpięcie biblioteki jquery-->
+	<script src="../jquery.scrollTo.min.js"></script>
+	
+	<script>
+		
+		jQuery(function($)
+		{
+			//zresetuj scrolla
+			$.scrollTo(0);
+			
+			$('#link2').click(function() { $.scrollTo($('#onas'), 500); });
+			$('#link3').click(function() { $.scrollTo($('#zapis'), 600); });
+			$('#link4').click(function() { $.scrollTo($('#mentorzy'), 700); });
+			$('.scrollup').click(function() { $.scrollTo($('body'), 1000); });
+		}
+		);
+		
+		//pokaż podczas przewijania
+		$(window).scroll(function()
+		{
+			if($(this).scrollTop()>300) $('.scrollup').fadeIn();
+			else $('.scrollup').fadeOut();		
+		}
+		);
+	
+	
+	</script>
+	
+	<style>
+.fab{
+	line-height: 40px;
+}
+
+
+.l-header {
+    height: auto;
+	}
+
+body{
+    background: url(../img/background1.2.jpg) no-repeat center;
+    background-size: cover;
+	font-family: 'lato',sans-serif; 
+}
+</style>
+		
+</head>
+
+<body>
+    <!-- header -->
+	<a href="#" class="scrollup"></a>
+	
+    <header class="l-header">
+	
+        
+        <div class="h-header-top">
+            <!-- navbar -->
+            <a href="index.html" class="c-logo"><span class="c-logo__span">let's!</span><span class="neon">DRAW</span></a>
+
+            <!-- hamburger -->
+			<div class="menu-btn">
+				<div class="menu-btn"></div>
+			</div>
+			
+			
+            <button class="c-hamburger">
+                <span class="c-hamburger__box">
+                    <span class="c-hamburger__inner"></span>
+                </span>
+            </button>
+
+            <nav class="c-nav">
+                <ul class="c-nav__list">
+                    <li class="c-nav__item"><a href="../index.html">HOME</a></li>
+					<li class="c-nav__item"><a  href="../podstrony/galeria.html">GALERIA</a></li>
+					<li class="c-nav__item"><a  href="">KONTAKT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+	
+	<br><br><br><br><br><br><br>
+    <div class="contact-info">
+        <div class="card">
+            <i class="icon fas fa-envelope"></i>
+            <div class="card-content">
+                <h3>Email</h3>
+                <span>kontakt@lets!draw.com</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <i class="icon fas fa-phone"></i>
+            <div class="card-content">
+                <h3>Numer telefonu</h3>
+                <span>22 666 39 09</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <i class="icon fas fa-map-marker-alt"></i>
+            <div class="card-content">
+                <h3>Adres</h3>
+                <span>Warszawa, 05-120
+				<br>ul. Parkowa 21</span>
+            </div>
+        </div>
+    </div>
+	
+	<footer class="c-footer">
+	
+        
+            <ul class="c-footer__list1">
+                <li class="c-footer__item"><a href="https://malgos208.github.io/projects/forms/index.html" target="blank">GitHub Pages</a></li>
+            </ul>
+      
+        
+            <ul class="c-footer__list2">
+                <li class="c-footer__item"><div class="foot"><span class="foot__span">let's!</span>DRAW</div></li>
+                <li class="c-footer__item"><p>Copyright &copy 2020 let's!DRAW</p></li>
+    
+            </ul>
+        
+    </footer>
+	
+	
+	<script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+	 <script src="../main.js"></script>
+
+    
+
+</body>
+</html>

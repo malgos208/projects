@@ -1,0 +1,144 @@
+.team-section{
+    width: 100vw;
+	
+	margin: 0;
+    padding: 0;
+   
+}
+
+
+
+
+@media (max-width: 767px) {
+	
+	.person-pic{
+	width: 100%;
+	cursor: pointer;
+	position: absolute;
+	overflow: hidden;
+	filter: grayscale(80%);
+    transition: .3s;
+	/*position: absolute;*/
+    /*top: 50%;
+    transform: translateY(-50%); */
+}
+
+.person:hover{
+	height: 50vh;
+	transition: .6s;
+	}
+
+.person-info{
+    position: relative;
+    top: 30px;
+    text-align: center;
+    width: 100%;
+    opacity: 0;
+    transition: .2s;
+}
+
+
+.person:hover .person-pic{
+    filter: grayscale(0);
+	transition: .3s;
+	
+}
+
+.person{
+    position: relative;
+    transition: .6s;
+}
+}
+
+@media (min-width: 767px) {
+.team-section{
+    height: 100vh;
+    display: flex;
+}
+
+.person{
+    flex: 1;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    transition: .6s;
+}
+
+.person:hover{
+    flex: 2;
+}
+
+
+.person-pic{
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    filter: grayscale(80%);
+    transition: .3s;
+}
+
+.person:hover .person-pic{
+    filter: grayscale(0);
+}
+
+
+.person-info{
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    width: 100%;
+    opacity: 0;
+    transition: .2s;
+}
+
+}
+
+
+.person:hover .person-info{
+    opacity: 1;
+    bottom: 60px;
+    transition-delay: .6s;
+}
+
+
+
+.person-info h2{
+    font-size: 20px;
+    color: #fff;
+	margin-bottom: 2px;
+}
+
+.work{
+    color: #fed539;
+    font-style: italic;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+.opis{
+	
+	color: white;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+.socialmedia a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    color: #333;
+    background-color: white;
+    line-height: 40px;
+    border-radius: 50%;
+    margin: 0 6px;
+    font-size: 18px;
+    transition: .3s linear;
+}
+
+.socialmedia a:hover{
+    color: #fed539;
+    background-color: transparent;
+    transform: scale(1.5);
+}
+
