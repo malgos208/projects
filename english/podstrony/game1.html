@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--kontroluje poziom zbliżenia po załadowaniu strony-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>English!withSHERLOCK</title>
+	<meta name="description" content="Naucz się angielskiego w przyjemny sposób!" />
+    <meta name="keywords" content="angielski, english, nauka, szybka nauka angielskiego, języki obce, sherlock, naucz się angielskiego" /> <!-- ułatwia wyszukiwanie strony -->
+
+    <link rel="stylesheet" href="../style/main.css">
+	<link rel="stylesheet" href="../style/style2.css">
+	<link rel="stylesheet" href="../style/style3.css">
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Chango" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Herr Von Muellerhoff" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Bowlby One SC" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Sofia" rel="stylesheet">
+	<script src="../game1.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="../jquery.scrollTo.min.js"></script>
+	
+	
+	<script>
+		
+		jQuery(function($)
+		{
+			//zresetuj scrolla
+			$.scrollTo(0);
+			
+			$('#link2').click(function() { $.scrollTo($('#uczsie'), 500); });
+			$('#link3').click(function() { $.scrollTo($('#zapis'), 600); });
+			$('#link4').click(function() { $.scrollTo($('#mentorzy'), 700); });
+			$('.scrollup').click(function() { $.scrollTo($('body'), 1000); });
+		}
+		);
+		
+		//pokaż podczas przewijania
+		$(window).scroll(function()
+		{
+			if($(this).scrollTop()>300) $('.scrollup').fadeIn();
+			else $('.scrollup').fadeOut();		
+		}
+		);
+	
+	
+	</script>
+	
+	<style>
+
+	.opis{
+	text-align:center;
+	}
+	@media (max-width: 767px) {
+  .text {
+    padding: 0px 25px;
+	font-size: 17px;
+  }
+  }
+	.opis{
+	padding: 50px 10px;
+	font-size: 20px;
+	color: white;
+	}
+	
+	#pojemnik img{
+	vertical-align: middle;
+	    border-style: none;
+		max-width: 100%;
+	}
+
+#pojemnik
+{
+	box-sizing: border-box;
+	display: flex;
+	background-color: black;
+	font-size: 20px;
+	padding: 20px;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+}
+
+@media (max-width: 767px) {
+#pojemnik, .container, #plansza, #alfbet{
+width: 100vw;
+}
+
+
+#pojemnik{
+display: block;
+}
+
+}
+
+#plansza
+{
+	margin-top: 50px;
+	margin-bottom: 50px;
+	text-align: center;
+	font-size: 35px;
+	
+}
+
+#szubienica
+{
+	float: left; 
+	text-align: center;
+	min-height: 280px;
+}
+
+#alfabet
+{
+	padding: 20px;
+	float: left; 
+	text-align: center;
+	min-height: 280px;
+}
+
+.litera
+{
+	width: 45px;
+	height: 45px;
+	text-align:center;
+	padding: 5px;
+	margin: 5px;
+	border: 3px solid gray;
+	float: left;
+	cursor: pointer;
+	border-radius: 15px;
+}
+
+.litera:hover
+{
+	background-color: #222222;
+	color: white;
+	border: 3px solid white;
+}
+
+.reset
+{
+	color: #be2849;
+	cursor: pointer;
+	font-size: 30px;
+	transition: .5;
+}
+
+.reset:hover
+{
+	color:#98203a;
+}
+
+</style>
+		
+</head>
+
+<body>
+    <!-- header -->
+	<a href="#" class="scrollup"></a>
+	
+    <header class="l-header">
+	
+        <div class="c-imgbackground c-imgbackground--main">
+		<div class="english">English! with</div>
+		<div class="pagetitle">SHERLOCK</div>
+		<div class="button">		
+				<a href="memory.html">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					find your own mind palace
+				</a>	
+			</div>
+		<a id="link2" href="#"><div class="ucz">ucz się</div></a>
+		
+		</div>
+        <div class="h-header-top">
+            <!-- navbar 
+            <a href="index.html" class="c-logo">english!<span class="c-logo__span">withSHERLOCK</span></a>-->
+
+            <!-- hamburger -->
+			<div class="menu-btn">
+				<div class="menu-btn"></div>
+				<div class="menu-btn"></div>
+			</div>
+			
+			
+            <button class="c-hamburger">
+                <span class="c-hamburger__box">
+                    <span class="c-hamburger__inner"></span>
+                </span>
+            </button>
+
+            <nav class="c-nav">
+                <ul class="c-nav__list">
+                    <li class="c-nav__item"><a href="../index.html">HOME</a></li>
+                    <li class="c-nav__item"><a  href="czasy.html">CZASY</a></li>
+                    <li class="c-nav__item"><a  href="slowka.html">SŁÓWKA</a></li>
+					<li class="c-nav__item"><a  href="conditionals.html">TRYBY WARUNKOWE</a></li>
+					<li class="c-nav__item"><a  href="passive.html">STRONA BIERNA</a></li>
+					<li class="c-nav__item"><a  href="przyslowki.html">PRZYSŁÓWKI</a></li>
+                </ul>
+            </nav>
+			
+        </div>
+		
+    </header>
+	<a id="uczsie"></a>
+
+	<div class="container">
+
+	<div class="websectiontitle" data-scroll>gra</div>
+	<div>
+	<p><img src="../img/game1.2.gif" class="halfimg" style="float: left;"></img>
+	<img src="../img/game1.4.gif" class="halfimg" style="float: right;"></img>
+	</div>
+	<br><br><p><div style="clear: both;"><br><br><p>
+	<div class="opis">Przetłumacz na język angielski: PRZEKONANIE</div>
+	</div>
+	
+	<div id="plansza"></div>
+	
+	
+			<div id="pojemnik">
+			
+		<div id="szubienica">
+			<img src="../img/s0.jpg" style=" background-size:cover";" alt="" />
+		</div>
+		<div id="alfabet"></div>
+		<div style="clear:both;"></div>
+		
+	</div>
+	
+	<div class="button">		
+				<a href="game2.html">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					Następna gra
+				</a>	
+	</div>
+	
+	
+	<br><br><br><br><br><br><br><br>
+	
+	</div>
+				
+
+	<footer class="c-footer">
+        
+            <ul class="c-footer__list1">
+                <li class="c-footer__item"><a href="https://malgos208.github.io/projects/english/index.html" target="blank">GitHub Pages</a></li>
+            </ul>
+       
+
+        
+            <ul class="c-footer__list2">
+                <li class="c-footer__item"><div class="foot"><span class="foot__span">English!</span>withSHERLOCK</div></li>
+                <li class="c-footer__item"><p>Copyright &copy 2020 English!withSHERLOCK</p></li>
+            </ul>
+        
+    </footer>
+	
+	
+	
+
+	<script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+	 <script src="../main.js"></script>
+    
+	
+</body>
+</html>

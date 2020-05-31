@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--kontroluje poziom zbliżenia po załadowaniu strony-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>English!withSHERLOCK</title>
+	<meta name="description" content="Naucz się angielskiego w przyjemny sposób!" />
+    <meta name="keywords" content="angielski, english, nauka, szybka nauka angielskiego, języki obce, sherlock, naucz się angielskiego" /> <!-- ułatwia wyszukiwanie strony -->
+
+    <link rel="stylesheet" href="../style/main.css">
+	<link rel="stylesheet" href="../style/stylequiz.css">
+	<link rel="stylesheet" href="../style/style2.css">
+	<link rel="stylesheet" href="../style/style3.css">
+	
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Herr Von Muellerhoff" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Chango" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Bowlby One SC" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Sofia" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <!--podpięcie biblioteki jquery-->
+	<script src="../jquery.scrollTo.min.js"></script>
+	<script src="../passive.js"></script>
+	
+	<script>
+		
+		jQuery(function($)
+		{
+			//zresetuj scrolla
+			$.scrollTo(0);
+			
+			$('#link2').click(function() { $.scrollTo($('#ucz'), 500); });
+			$('#link3').click(function() { $.scrollTo($('#zapis'), 600); });
+			$('#link4').click(function() { $.scrollTo($('#mentorzy'), 700); });
+			$('.scrollup').click(function() { $.scrollTo($('body'), 1000); });
+		}
+		);
+		
+		//pokaż podczas przewijania
+		$(window).scroll(function()
+		{
+			if($(this).scrollTop()>300) $('.scrollup').fadeIn();
+			else $('.scrollup').fadeOut();		
+		}
+		);
+	
+	
+	</script>
+	
+		<style>
+					
+			table {
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+ 
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+   padding: 10px;
+}
+
+th{
+background-color: rgba(190,40,73, .6);
+text-align: center;
+
+}
+
+</style>
+		
+</head>
+
+<body>
+    <!-- header -->
+	<a href="#" class="scrollup"></a>
+	
+    <header class="l-header">
+	
+        <div class="c-imgbackground c-imgbackground--main">
+		<div class="english">English! with</div>
+		<div class="pagetitle">SHERLOCK</div>
+		<div class="button">		
+				<a href="memory.html">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					find your own mind palace
+				</a>	
+			</div>
+		<a id="link2" href="#"><div class="ucz">ucz się</div></a>
+		
+		</div>
+        <div class="h-header-top">
+            <!-- navbar 
+            <a href="index.html" class="c-logo">english!<span class="c-logo__span">withSHERLOCK</span></a>-->
+
+            <!-- hamburger -->
+			<div class="menu-btn">
+				<div class="menu-btn"></div>
+			</div>
+			
+			
+            <button class="c-hamburger">
+                <span class="c-hamburger__box">
+                    <span class="c-hamburger__inner"></span>
+                </span>
+            </button>
+
+            <nav class="c-nav">
+                <ul class="c-nav__list">
+                    <li class="c-nav__item"><a href="../index.html">HOME</a></li>
+                    <li class="c-nav__item"><a  href="">CZASY</a></li>
+                    <li class="c-nav__item"><a  href="slowka.html">SŁÓWKA</a></li>
+					<li class="c-nav__item"><a  href="conditionals.html">TRYBY WARUNKOWE</a></li>
+					<li class="c-nav__item"><a  href="passive.html">STRONA BIERNA</a></li>
+					<li class="c-nav__item"><a  href="przyslowki.html">PRZYSŁÓWKI</a></li>
+                </ul>
+            </nav>
+			
+        </div>
+		
+    </header>
+	<a id="ucz"></a>
+	<div class="text">
+	<div class="websectiontitle" data-scroll>CZASY</div>
+	<img src="../img/czasy.jpg" style="width: 100%;"></img>
+	
+	<div class="websectiontitle" data-scroll>Present Simple</div>
+
+<p>Czasu tego używamy, kiedy opisujemy rutynę.
+<div class="struktura"><p>The trains leaves at seven o'clock.</div>
+<p><img src="../img/train.gif" style="width: 70%; position:relative; left: 50%; transform: translateX(-50%)"></img>
+
+		<div class="websectiontitle" data-scroll>Present Continuous</div>
+Czas ten najczęściej opisuje czynność, która jest w tej chwili wykonywana.
+<div class="struktura"><p>I am talking to Mary now so I can't do it.</div>
+
+
+<div class="websectiontitle" data-scroll>Present Perfect</div>
+W czasie tym nie jest istotne, kiedy czynność została wykonana - ważne są jej skutki w teraźniejszości. Opisuje czynność, która zaczęła się w danym momencie w przeszłości i trwa do dziś lub doświadczenie.
+<div class="struktura"><p>I have lived here for six years.</div>
+<p><img src="../img/ihaveloved.gif" style="width: 70%; position:relative; left: 50%; transform: translateX(-50%)"></img>
+ 
+<div class="websectiontitle" data-scroll>Present Perfect Continuous</div>
+Tego czasu używamy, kiedy opisywana czynność rozpoczęła się w przeszłości, trwała nieprzerwanie i trwa do chwili obecnej lub  rozpoczęła się w przeszłości i właśnie się skończyła ale jej skutki są wciąż odczuwalne. Jest to czynność ciągła, niedokonana.
+<div class="struktura"><p>I have been listening to them for four years.</div>
+
+<div class="websectiontitle" data-scroll>Future Simple</div>
+Jest to czas przyszły prosty. Opisuje to, co wydarzy się w przyszłości.
+<div class="struktura"><p>Moriarty will set a trap for us sooner or later.</div>
+<p><img src="../img/moriarty.gif" style="width: 70%; position:relative; left: 50%; transform: translateX(-50%)"></img>
+ 
+<div class="websectiontitle" data-scroll>Future Continuous</div>
+W tym czasie wyrażamy czynność, która będzie wykonywana w przyszłości i będzie trwała pewien czas.
+<div class="struktura"><p>Tomorrow at this time he will be lying on the beach.</div>
+
+<div class="websectiontitle" data-scroll>Future Perfect</div>
+Czas ten jest używany do określenia czynności, która skończy się zanim zacznie się następna czynność lub zakończy się przed pewnym określonym czasem (punktem) w przyszłości.
+<div class="struktura"><p>Shelock will not have stopped dancing until the end of the day.</div>
+<p><img src="../img/dance.gif" style="width: 70%; position:relative; left: 50%; transform: translateX(-50%)"></img>
+
+<div class="websectiontitle" data-scroll>Future Perfect Continuous</div>
+Ten czas określa czynność, która najczęściej już trwa, a która zakończy się w określonym momencie w przyszłości. Różnica między Future Perfect Continuous a Future Perfect polega jedynie na tym, że właśnie tę ciągłość chcemy podkreślić, a nie efekty czynności.
+<div class="struktura"><p>I will have been reading my new book for two hours before my friend comes to see me.</div>
+
+<div class="websectiontitle" data-scroll>Past Simple</div>
+Ten czas opisuje wydarzenia, które dokonały się w określonym czasie w przeszłości.
+<div class="struktura"><p>I bought a house last week.</div>
+<p><img src="../img/missme.gif" style="width: 70%; position:relative; left: 50%; transform: translateX(-50%)"></img>
+
+<div class="websectiontitle" data-scroll>Past Continuous</div>
+Ten czas opisuje czynność trwającą, która miała miejsce w przeszłości.
+<div class="struktura"><p>He was washing the dishes when she called.</div>
+
+<div class="websectiontitle" data-scroll>Past Perfect</div>
+Czas ten opisuje czynność, która dokonała się zanim rozpoczęła się inna czynność przeszła. Używamy go przeważnie z czasem Past Simple.
+<div class="struktura"><p>I had eaten lunch before she came.</div>
+<p><img src="../img/dinner.gif" style="width: 70%; position:relative; left: 50%; transform: translateX(-50%)"></img>
+
+<div class="websectiontitle" data-scroll>Past Perfect Continuous</div>
+Tego czasu używamy mówiąc o czynności ciągłej w przeszłości która zaczęła się zanim miała miejsce jakaś inna czynność przeszła. Używamy go zazwyczaj z czasem Past Simple.
+<div class="struktura"><p>After I talked with my mom I had been washing the dishes.</div>
+
+			<br><br><p><div class="websectiontitle" data-scroll>BUDOWA</div>
+		
+
+<table>
+  <tr>
+	<th></th>
+    <th>SIMPLE</th>
+    <th>PERFECT</th>
+  </tr>
+  <tr>
+	<th>Tense</th>
+    <td>"tensed"</td>
+    <td>"tensed" <b>have</b> + Past Participle</td>
+  </tr>
+  <tr>
+    <th>PRESENT</th>
+    <td>write/writes <p>walk/walks</td>
+    <td>has/have written <p> has/have walked</td>
+  </tr>
+  <tr>
+	<th>PAST</th>
+    <td>wrote <p>walked</td>
+    <td>had written <p> had walked</td>
+  </tr>
+  <tr>
+	<th>FUTURE</th>
+    <td>will write <p>will walk</td>
+    <td>will have written <p>will have walked</td>
+  </tr>
+</table>
+			
+			
+<table>
+  <tr>
+	<th></th>
+    <th>CONTINUOUS</th>
+    <th>PERFECT CONT.</th>
+  </tr>
+  <tr>
+	<th>Tense</th>
+    <td>"tensed" <b>be</b> + Present Participle</td>
+    <td>"tensed" <b>have</b> + <b>been</b> + Past Participle</td>
+  </tr>
+  <tr>
+    <th>PRESENT</th>
+    <td>am/is/are writing <p>am/is/are walking</td>
+    <td>has/have been writing <p> has/have been walking</td>
+  </tr>
+  <tr>
+
+	<th>PAST</th>
+    <td>was/were writing <p>was/were walking</td>
+    <td>had been writing<p>had been walking</td>
+  </tr>
+  <tr>
+	<th>FUTURE</th>
+    <td>will be writing<p>will be walking</td>
+    <td>will have been writing<p>will have walking</td>
+  </tr>
+</table>
+<p><p><img src="../img/season3.gif" style="width: 60%; position:relative; left: 50%; transform: translateX(-50%)"></img>
+			
+
+</div>
+
+	<div class="text">
+	
+	<br><br><br><br><br><br><br><br>
+	</div>
+				
+
+	<footer class="c-footer">
+        
+            <ul class="c-footer__list1">
+                <li class="c-footer__item"><a href="https://malgos208.github.io/projects/english/index.html" target="blank">GitHub Pages</a></li>
+            </ul>
+       
+
+        
+            <ul class="c-footer__list2">
+                <li class="c-footer__item"><div class="foot"><span class="foot__span">English!</span>withSHERLOCK</div></li>
+                <li class="c-footer__item"><p>Copyright &copy 2020 English!withSHERLOCK</p></li>
+            </ul>
+        
+    </footer>
+	
+	
+	
+	<script src="../jquery-3.2.1.min.js"></script>
+	<script src="../memory.js"></script>
+	<script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+	 <script src="../main.js"></script>
+	 
+    
+	
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+	
+
+

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--kontroluje poziom zbliżenia po załadowaniu strony-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>English!withSHERLOCK</title>
+	<meta name="description" content="Naucz się angielskiego w przyjemny sposób!" />
+    <meta name="keywords" content="angielski, english, nauka, szybka nauka angielskiego, języki obce, sherlock, naucz się angielskiego" /> <!-- ułatwia wyszukiwanie strony -->
+
+    <link rel="stylesheet" href="../style/main.css">
+	<link rel="stylesheet" href="../style/stylequiz.css">
+	<link rel="stylesheet" href="../style/style2.css">
+	<link rel="stylesheet" href="../style/style3.css">
+	
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Herr Von Muellerhoff" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Chango" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Bowlby One SC" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Sofia" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <!--podpięcie biblioteki jquery-->
+	<script src="../jquery.scrollTo.min.js"></script>
+	<script src="../passive.js"></script>
+	
+	<script>
+		
+		jQuery(function($)
+		{
+			//zresetuj scrolla
+			$.scrollTo(0);
+			
+			$('#link2').click(function() { $.scrollTo($('#ucz'), 500); });
+			$('#link3').click(function() { $.scrollTo($('#zapis'), 600); });
+			$('#link4').click(function() { $.scrollTo($('#mentorzy'), 700); });
+			$('.scrollup').click(function() { $.scrollTo($('body'), 1000); });
+		}
+		);
+		
+		//pokaż podczas przewijania
+		$(window).scroll(function()
+		{
+			if($(this).scrollTop()>300) $('.scrollup').fadeIn();
+			else $('.scrollup').fadeOut();		
+		}
+		);
+	
+	
+	</script>
+	
+		<style>
+					
+			table {
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+ 
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+   padding: 10px;
+}
+
+th{
+background-color: rgba(190,40,73, .6);
+text-align: center;
+
+}
+
+</style>
+		
+</head>
+
+<body>
+    <!-- header -->
+	<a href="#" class="scrollup"></a>
+	
+    <header class="l-header">
+	
+        <div class="c-imgbackground c-imgbackground--main">
+		<div class="english">English! with</div>
+		<div class="pagetitle">SHERLOCK</div>
+		<div class="button">		
+				<a href="memory.html">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					find your own mind palace
+				</a>	
+			</div>
+		<a id="link2" href="#"><div class="ucz">ucz się</div></a>
+		
+		</div>
+        <div class="h-header-top">
+            <!-- navbar 
+            <a href="index.html" class="c-logo">english!<span class="c-logo__span">withSHERLOCK</span></a>-->
+
+            <!-- hamburger -->
+			<div class="menu-btn">
+				<div class="menu-btn"></div>
+			</div>
+			
+			
+            <button class="c-hamburger">
+                <span class="c-hamburger__box">
+                    <span class="c-hamburger__inner"></span>
+                </span>
+            </button>
+
+            <nav class="c-nav">
+                <ul class="c-nav__list">
+                    <li class="c-nav__item"><a href="../index.html">HOME</a></li>
+                    <li class="c-nav__item"><a  href="czasy.html">CZASY</a></li>
+                    <li class="c-nav__item"><a  href="slowka.html">SŁÓWKA</a></li>
+					<li class="c-nav__item"><a  href="conditionals.html">TRYBY WARUNKOWE</a></li>
+					<li class="c-nav__item"><a  href="">STRONA BIERNA</a></li>
+					<li class="c-nav__item"><a  href="przyslowki.html">PRZYSŁÓWKI</a></li>
+                </ul>
+            </nav>
+			
+        </div>
+		
+    </header>
+	<a id="ucz"></a>
+	<div class="text">
+	<div class="websectiontitle" data-scroll>PASSIVE VOICE – STRONA BIERNA</div>
+	<img src="../img/passive.jpg" style="width: 100%;"></img>
+		<div class="websectiontitle" data-scroll>UŻYCIE</div>
+			Strony biernej używamy, kiedy „ważniejszy” jest dla nas przedmiot, który doświadcza  danej czynności niż osoba, która ją wykonuje. 
+			<div class="websectiontitle" data-scroll>TWIERDZENIA</div>
+			<img src="../img/cake.gif" class="halfimg"></img><img src="../img/cake2.2.gif" class="halfimg"></img>
+
+
+<table>
+  <tr>
+	<th>TENSE</th>
+    <th>ACTIVE</th>
+    <th>PASSIVE</th>
+  </tr>
+  <tr>
+	<th>Present Simple</th>
+    <td>I <b>make</b> a cake.</td>
+    <td>A cake <b>is</b> made.</td>
+  </tr>
+  <tr>
+    <th>Present Continous</th>
+    <td>I <b>am making</b> a cake.</td>
+    <td>A cake <b>is being</b> made.</td>
+  </tr>
+  <tr>
+	<th>Past Simple</th>
+    <td>I <b>made</b> a cake.</td>
+    <td>A cake <b>was</b> made.</td>
+  </tr>
+  <tr>
+	<th>Past Continious</th>
+    <td>I <b>was making</b> a cake.</td>
+    <td>A cake <b>was being</b> made.</td>
+  </tr>
+  <tr>
+	<th>Present Perfect</th>
+    <td>I <b>have made</b> a cake.</td>
+    <td>A cake <b>has been</b> made.</td>
+  </tr>
+  <tr>
+	<th>Past Perfect</th>
+    <td>I <b>had made</b> a cake.</td>
+    <td>A cake <b>had been</b> made.</td>
+  </tr>
+  <tr>
+	<th>Future Simple</th>
+    <td>I <b>will</b> make a cake.</td>
+    <td>A cake <b>will be</b> made.</td>
+  </tr>
+  <tr>
+	<th>Future be going</th>
+    <td>I <b>am going to</b> make a cake.</td>
+    <td>A cake <b>is going to be</b> made.</td>
+  </tr>
+  <tr>
+	<th>Modal</th>
+    <td>I <b>must</b> make a cake.</td>
+    <td>A cake <b>must be</b> made.</td>
+  </tr>
+  <tr>
+	<th>Modal Perfect</th>
+    <td>I <b>should have</b> made a cake.</td>
+    <td>A cake <b>should had been</b> made.</td>
+  </tr>
+</table>
+
+
+			
+			<div class="websectiontitle" data-scroll>PYTANIA</div>
+			Pytania w Passive Voice tworzymy za pomocą inwersji.
+			<p>Pytania w stronie biernej zaczynają się od słowa pomocniczego "to be" w odpowiednim czasie.
+
+<p>Strona bierna czasu <b>Present Simple</b>: Is she loved by him? (Czy ona jest przez niego kochana?) <br>Zdaniem oznajmującym jest: "She is loved by him". W pytaniach słowo pomocnicze "is" zostaje przeniesione przed podmiot pytania (she).
+<p>Strona bierna czasu <b>Past Simple</b>: Was he given those books? (Czy dano mu te książki?)<br>Zdaniem oznajmującym jest: "He was given those books". W pytaniach słowo pomocnicze "was" zostaje przeniesione przed podmiot pytania (he).
+<p>Strona bierna czasu <b>Present Perfect</b>: Have they been let in? (Czy zostali wpuszczeni?) <br>Zdaniem oznajmującym jest: "They have been let in ". W pytaniach słowo pomocnicze "have" zostaje przeniesione przed podmiot pytania (they).
+			<p>Zasada ta obowiązuje dla wszystkich angielskich czasów.
+			
+			
+			
+			<div class="websectiontitle" data-scroll>ZADANIA</div>
+			<img src="../img/case.gif" style="width: 100%;"></img>
+			<div class="zad">
+			<p style="color: #be2849;">Zadanie 1</p>
+<p>Utwórz stronę bierną od podanych zdań. Używaj pełnych form wyrazów. Pomiń, przez kogo czynność została wykonana. Pamiętaj o znakach interpunkcyjnych i wielkich literach na początku zdań.
+<form class="contact-form" name = "quiz">
+
+<p class = "questions">1. He build this house in 2020.</p>
+<input class="contact-form-text" placeholder="He build this house in 2020." type = "text" name = "question1">
+
+<p class = "questions">2. She checks it every day.</p>
+<input class="contact-form-text" placeholder="She checks it every day." type = "text" name = "question2">
+
+<p class = "questions">3. I’ll buy food.</p>
+<input class="contact-form-text" placeholder="I’ll buy food." type = "text" name = "question3">
+
+<p class = "questions">4. A custom officer is checking the passport.</p>
+<input class="contact-form-text" placeholder="A custom officer is checking the passport." type = "text" name = "question4">
+
+<p class = "questions">5. I can do it.</p>
+<input class="contact-form-text" placeholder="I can do it." type = "text" name = "question5">
+
+<p class = "questions">6. She has cooked the meal.</p>
+<input class="contact-form-text" placeholder="She has cooked the meal." type = "text" name = "question6">
+
+<p class = "questions">7. I had made the tea.</p>
+<input class="contact-form-text" placeholder="I had made the tea." type = "text" name = "question7">
+
+<p class = "questions">8. She was doing her homework.</p>
+<input class="contact-form-text" placeholder="She was doing her homework." type = "text" name = "question8">
+</div>
+<img src="../img/solved.gif" style="width: 100%;"></img>
+<p>
+
+<div class="zad">
+<br><p style="color: #be2849;">Zadanie 2</p>
+<p>Utwórz pytania w stronie biernej.
+<p class = "questions">1. My mom prepared the meal.</p>
+<input class="contact-form-text" type = "text" name = "question9">
+
+<p class = "questions">2. Animals are fed twice a day.</p>
+<input class="contact-form-text" type = "text" name = "question10">
+
+<p class = "questions">3. Tests will be checked soon.</p>
+<input class="contact-form-text" type = "text" name = "question11">
+
+<p class = "questions">4. This hospital was built in 1956.</p>
+<input class="contact-form-text" type = "text" name = "question12">
+</div>
+
+<p>
+
+<div class="zad">
+<br><p style="color: #be2849;">Zadanie 3</p>
+<p>Wybierz poprawną odpowiedź.
+<div class="container1">
+<p class = "questions">1. Mrs Robinson has washed her hair.</p>
+<label class="container">Her hair has been washed.<input type="radio" name="question13" value="a"><span class="check"></span></label>
+<label class="container">Her hair was washed<input type="radio" name="question13" value="b"><span class="check"></span></label>
+<label class="container">Her hair has washed.<input type="radio" name="question13" value="c"><span class="check"></span></label>
+</div>
+<div class="container1">
+<p class = "questions">2. I am drinking a lemon tea.</p>
+<label class="container">A lemon tea is being drunk.<input type="radio" name="question14" value="a"><span class="check"></span></label>
+<label class="container">A lemon tea is drunk.<input type="radio"  name="question14" value="b"><span class="check"></span></label>
+<label class="container">A lemon tea is drinking.<input type="radio" name="question14" value="c"><span class="check"></span></label>
+</div>
+<div class="container1">
+<p class = "questions">3. Can we eat this chicken, mum?</p>
+<label class="container">Can this chicken eat, mum?<input type="radio" name="question15" value="a"><span class="check"></span></label>
+<label class="container">Can this chicken be eat, mum?<input type="radio"  name="question15" value="b"><span class="check"></span></label>
+<label class="container">Can this chicken be eaten, mum?<input type="radio" name="question15" value="c"><span class="check"></span></label>
+</div>
+<div class="container1">
+<p class = "questions">4. Kate changes her clothes twice a day.</p>
+<label class="container">Clothes are changed twice a day by Kate.<input type="radio" name="question16" value="a"><span class="check"></span></label>
+<label class="container">Clothes are changed twice a day with Kate.<input type="radio"  name="question16" value="b"><span class="check"></span></label>
+<label class="container">Clothes changed twice a day by Kate.<input type="radio" name="question16" value="c"><span class="check"></span></label>
+</div>
+<div class="container1">
+<p class = "questions">5. My brother turned down the lights when he finished his work.</p>
+<label class="container">The lights were turned down by my brother his work finished.<input type="radio" name="question17" value="a"><span class="check"></span></label>
+<label class="container">The lights were turned down by my brother when his work was finished.<input type="radio"  name="question17" value="b"><span class="check"></span></label>
+<label class="container">The lights turned down by my brother when his work was finished.<input type="radio" name="question17" value="c"><span class="check"></span></label>
+</div>
+<div class="container1">
+<p class = "questions">6. The waiter will not serve me a fried chicken.</p>
+<label class="container">I will not serve a fried chicken.<input type="radio" name="question18" value="a"><span class="check"></span></label>
+<label class="container">A fried chicken will not be served by the waiter.<input type="radio"  name="question18" value="b"><span class="check"></span></label>
+<label class="container">I will not be served a fried chicken.<input type="radio" name="question18" value="c"><span class="check"></span></label>
+</div>
+</div>
+
+<p><input type="button" id="button" class="contact-form-btn" value="Sprawdź wynik" onclick = "check();">
+	<br><br><br><input type="reset" class="contact-form-btn" value="Wyczyść wszystko">
+
+</form>
+<p><p><br><br>
+<div class="struktura">
+<div id = "after_submit">
+<p id = "number_correct"></p>
+<p id = "message"></p>
+</div>
+<img id = "picture" style="width: 100%;">
+<!--<img id = "picture" style="width: 70%; position:relative; left: 50%; transform: translateX(-50%)">-->
+</div>
+
+</div>
+
+	<div class="text">
+	
+	<br><br><br><br><br><br><br><br>
+	</div>
+				
+
+	<footer class="c-footer">
+        
+            <ul class="c-footer__list1">
+                <li class="c-footer__item"><a href="https://malgos208.github.io/projects/english/index.html" target="blank">GitHub Pages</a></li>
+            </ul>
+       
+
+        
+            <ul class="c-footer__list2">
+                <li class="c-footer__item"><div class="foot"><span class="foot__span">English!</span>withSHERLOCK</div></li>
+                <li class="c-footer__item"><p>Copyright &copy 2020 English!withSHERLOCK</p></li>
+            </ul>
+        
+    </footer>
+	
+	
+	
+	<script src="../jquery-3.2.1.min.js"></script>
+	<script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+	 <script src="../main.js"></script>
+	 
+    
+	
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+	
+
+

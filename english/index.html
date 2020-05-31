@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--kontroluje poziom zbliżenia po załadowaniu strony-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>English!withSHERLOCK</title>
+	<meta name="description" content="Naucz się angielskiego w przyjemny sposób!" />
+    <meta name="keywords" content="angielski, english, nauka, szybka nauka angielskiego, języki obce, sherlock, naucz się angielskiego" /> <!-- ułatwia wyszukiwanie strony -->
+
+    <link rel="stylesheet" href="style/main.css">
+	<link rel="stylesheet" href="style/style2.css">
+	<link rel="stylesheet" href="style/style3.css">
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Herr Von Muellerhoff" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Chango" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Bowlby One SC" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Sofia" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <!--podpięcie biblioteki jquery-->
+	<script src="jquery.scrollTo.min.js"></script>
+	
+	<script>
+		
+		jQuery(function($)
+		{
+			//zresetuj scrolla
+			$.scrollTo(0);
+			
+			$('#link2').click(function() { $.scrollTo($('#ucz'), 500); });
+			$('#link3').click(function() { $.scrollTo($('#zapis'), 600); });
+			$('#link4').click(function() { $.scrollTo($('#mentorzy'), 700); });
+			$('.scrollup').click(function() { $.scrollTo($('body'), 1000); });
+		}
+		);
+		
+		//pokaż podczas przewijania
+		$(window).scroll(function()
+		{
+			if($(this).scrollTop()>300) $('.scrollup').fadeIn();
+			else $('.scrollup').fadeOut();		
+		}
+		);
+	
+	
+	</script>
+	
+	<script src="bower_components/scrollreveal/dist/scrollreveal.min.js"></script>
+	
+<script>
+    window.sr = ScrollReveal();
+    sr.reveal('.icon', {
+        reset: true,
+        delay: 300,
+        distance: 0
+    });
+    sr.reveal('h2, p', {
+        reset: true,
+        delay: 300
+    });
+</script>
+	
+	<style>
+	@media (max-width: 767px) {
+	.opis__1{
+	color: #be2849;
+	}
+	}
+	
+
+.fab{
+	line-height: 40px;
+}
+</style>
+		
+</head>
+
+<body>
+    <!-- header -->
+	<a href="#" class="scrollup"></a>
+	
+    <header class="l-header">
+	
+        <div class="c-imgbackground c-imgbackground--main">
+		<div class="english">English! with</div>
+		<div class="pagetitle">SHERLOCK</div>
+		<div class="button">		
+				<a href="podstrony/memory.html">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					find your own mind palace
+				</a>	
+			</div>
+		<a id="link2" href="#"><div class="ucz">ucz się</div></a>
+		
+		</div>
+        <div class="h-header-top">
+            <!-- navbar 
+            <a href="index.html" class="c-logo">english!<span class="c-logo__span">withSHERLOCK</span></a>-->
+
+            <!-- hamburger -->
+			<div class="menu-btn">
+				<div class="menu-btn"></div>
+			</div>
+			
+			
+            <button class="c-hamburger">
+                <span class="c-hamburger__box">
+                    <span class="c-hamburger__inner"></span>
+                </span>
+            </button>
+
+            <nav class="c-nav">
+                <ul class="c-nav__list">
+                    <li class="c-nav__item"><a href="#">HOME</a></li>
+                    <li class="c-nav__item"><a  href="podstrony/czasy.html">CZASY</a></li>
+                    <li class="c-nav__item"><a  href="podstrony/slowka.html">SŁÓWKA</a></li>
+					<li class="c-nav__item"><a  href="podstrony/conditionals.html">TRYBY WARUNKOWE</a></li>
+					<li class="c-nav__item"><a  href="podstrony/passive.html">STRONA BIERNA</a></li>
+					<li class="c-nav__item"><a  href="podstrony/przyslowki.html">PRZYSŁÓWKI</a></li>
+                </ul>
+            </nav>
+			
+        </div>
+		
+    </header>
+	<a id="ucz"></a>
+	<div class="maincontainer">
+			<div class="text" style="text-align: center">
+				<p><div class="websectiontitle" style="font-size: 20px;" data-scroll>Ucz się angielskiego z English!withSHERLOCK</div>
+				<br><p>Chcesz bez problemu porozumiewać w języku angielskim? Jesteś fanem sławnego Sherlocka Holmesa i jego przygód? Potrzebujesz profesjonalnego, a zarazem jasnego objaśnienia poszczególnych zagadnień?
+
+<p>English! with Sherlock to strona idealna dla Ciebie!
+
+<br><br><br><p><div class="websectiontitle" data-scroll>Dlaczego właśnie nasza strona?</div>
+
+			</div>
+			
+	<!--TEACHERS-->	
+			<a id="mentorzy"></a>	
+			<div class="team-section">
+        
+
+        <div class="person">
+            <img src="img/one3.jpg" alt="" class="person-pic">
+            <div class="person-info">
+                <h2>Innowacyjność</h2>
+				<span class="opis"><p>Dzięki nam <br>nauczysz się języka angielskiego <br>w krótszym czasie, <br>niż korzystając <br>z innych tego typu witryn.<p></span>
+                
+            </div>
+        </div>
+
+        <div class="person">
+            <img src="img/english2.gif" alt="" class="person-pic">
+            <div class="person-info">
+                <h2>Nowatorskie metody</h2>
+				<span class="opis__1">
+				<p>Nauka języka <br>jest u nas bardzo przyjemna. <br>Na stronie <br>poza wyjaśnieniami różnorodnych zagadnień,<br>znajdziesz ćwiczenia oraz gry. <br>Nie brakuje również nawiązań <br>do serialu o słynnym detektywie.<p>
+				</span>
+				
+                <div class="socialmedia">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+	
+
+        <div class="person">
+            <img src="img/three2.jpg" alt="" class="person-pic">
+            <div class="person-info">
+			
+                <h2>Klarowne omówienia tematów</h2>
+ 
+				<span class="opis">
+				<p>Tematy wyjaśniamy w taki sposób,<br> aby każdy bez problemu <br>mógł sobie sobie z nim poradzić.<br> Do każdego zagadnienia podane są przykłady,<br> a naukę ułatwiają interaktywne zadania,<br> które pomogą Ci sprawdzić swoją wiedzę. <p>
+				</span>
+                
+            </div>
+        </div>
+    </div>
+	
+	<div class="text">
+	<br><br><br><br><br><br><br><br><br><br><br><br>
+	</div>
+	</div>
+				
+
+	<footer class="c-footer">
+        
+            <ul class="c-footer__list1">
+                <li class="c-footer__item"><a href="https://malgos208.github.io/projects/english/index.html" target="blank">GitHub Pages</a></li>
+            </ul>
+       
+
+        
+            <ul class="c-footer__list2">
+                <li class="c-footer__item"><div class="foot"><span class="foot__span">English!</span>withSHERLOCK</div></li>
+                <li class="c-footer__item"><p>Copyright &copy 2020 english!withSHERLOCK</p></li>
+            </ul>
+        
+    </footer>
+	
+	
+	
+
+	<script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+	 <script src="main.js"></script>
+    
+	
+</body>
+</html>
