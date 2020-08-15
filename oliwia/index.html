@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--kontroluje poziom zbliżenia po załadowaniu strony-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Birthday Game</title>
+	<meta name="description" content="" />
+    <meta name="keywords" content="" /> <!-- ułatwia wyszukiwanie strony -->
+
+    <link rel="stylesheet" href="style/main.css">
+	<link rel="stylesheet" href="style/stylequiz.css">
+	<link rel="stylesheet" href="style/style2.css">
+	<link rel="stylesheet" href="style/style3.css">
+	
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Herr Von Muellerhoff" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Chango" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Bowlby One SC" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Sofia" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <!--podpięcie biblioteki jquery-->
+	<script src="jquery.scrollTo.min.js"></script>
+	<script src="passive.js"></script>
+	
+	
+	<script>
+		
+		jQuery(function($)
+		{
+			//zresetuj scrolla
+			$.scrollTo(0);
+			
+			$('#link2').click(function() { $.scrollTo($('#ucz'), 500); });
+			$('#link3').click(function() { $.scrollTo($('#zapis'), 600); });
+			$('#link4').click(function() { $.scrollTo($('#mentorzy'), 700); });
+			$('.scrollup').click(function() { $.scrollTo($('body'), 1000); });
+		}
+		);
+		
+		//pokaż podczas przewijania
+		$(window).scroll(function()
+		{
+			if($(this).scrollTop()>300) $('.scrollup').fadeIn();
+			else $('.scrollup').fadeOut();		
+		}
+		);
+	
+	
+	
+	</script>
+	
+	<script>
+
+</script>
+	
+		<style>
+					
+			table {
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+ 
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+   padding: 10px;
+}
+
+th{
+background-color: rgba(190,40,73, .6);
+text-align: center;
+
+}
+
+</style>
+		
+</head>
+
+<body>
+    <!-- header -->
+	<a href="#" class="scrollup"></a>
+	
+    <header class="l-header">
+	
+        <div class="c-imgbackground c-imgbackground--main">
+		<div class="english">Birthday</div>
+		<div class="pagetitle">GAME</div>
+		</div>
+        
+		
+    </header>
+	<a id="ucz"></a>
+	<div class="text">
+	<div class="websectiontitle" data-scroll>Birthday GAME</div>
+	
+			
+			
+			
+			<p style="color: #be2849;">KODY</p>
+<p>Tu umieszczaj rozwiązane przez siebie kody, a otrzymasz kolejne podpowiedzi.
+
+<form class="contact-form" name = "quiz1">
+<p class = "questions">1. Wpisz kod</p>
+<input class="contact-form-text" placeholder="Wpisz kod" type = "text" name = "question1">
+
+<p><input type="button" id="button" class="contact-form-btn" value="Sprawdź" onclick = "check();">
+	<br><br><br><input type="reset" class="contact-form-btn" value="Wyczyść wszystko">
+</form>	
+
+<p><p><br><br>
+<div class="struktura">
+
+<div id = "after_submit1">
+<p id = "message1"></p>
+</div>
+
+</div>
+	
+<form class="contact-form" name = "quiz2">	
+<p class = "questions">2. Wpisz kod</p>
+<input class="contact-form-text" placeholder="Wpisz kod" type = "text" name = "question2">
+
+<p><input type="button" id="button" class="contact-form-btn" value="Sprawdź" onclick = "check2();">
+	<br><br><br><input type="reset" class="contact-form-btn" value="Wyczyść wszystko">
+</form>	
+
+<p><p><br><br>
+<div class="struktura">
+<div id = "after_submit2">
+<p id = "message2"></p>
+</div>
+
+</div>
+
+<form class="contact-form" name = "quiz3">	
+<p class = "questions">3. Wpisz kod</p>
+<input class="contact-form-text" placeholder="Wpisz kod" type = "text" name = "question3">
+
+<p><input type="button" id="button" class="contact-form-btn" value="Sprawdź" onclick = "check3();">
+	<br><br><br><input type="reset" class="contact-form-btn" value="Wyczyść wszystko">
+</form>	
+
+<p><p><br><br>
+<div class="struktura">
+<div id = "after_submit3">
+<p id = "message3"></p>
+</div>
+<img id = "picture3" style="width: 100%;">
+<!--<img id = "picture" style="width: 70%; position:relative; left: 50%; transform: translateX(-50%)">-->
+</div>
+
+
+<form class="contact-form" name = "quiz4">	
+<p class = "questions">4. Wpisz kod</p>
+<input class="contact-form-text" placeholder="Wpisz kod" type = "text" name = "question4">
+
+<p><input type="button" id="button" class="contact-form-btn" value="Sprawdź" onclick = "check4();">
+	<br><br><br><input type="reset" class="contact-form-btn" value="Wyczyść wszystko">
+</form>	
+
+<p><p><br><br>
+<div class="struktura">
+<div id = "after_submit4">
+<p id = "message4"></p>
+</div>
+</div>
+
+
+<form class="contact-form" name = "quiz5">	
+<p class = "questions">5. Wpisz kod</p>
+<input class="contact-form-text" placeholder="Wpisz kod" type = "text" name = "question5">
+
+<p><input type="button" id="button" class="contact-form-btn" value="Sprawdź" onclick = "check5();">
+	<br><br><br><input type="reset" class="contact-form-btn" value="Wyczyść wszystko">
+</form>	
+
+<p><p><br><br>
+<div class="struktura">
+<div id = "after_submit5">
+<p id = "message5"></p>
+</div>
+
+</div>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</div>
+
+	<div class="text">
+	
+	<br><br><br><br><br><br><br><br>
+	</div>
+				
+
+	<footer class="c-footer">
+        
+            <ul class="c-footer__list1">
+                <li class="c-footer__item"><a href="https://malgos208.github.io/projects/julka/index.html" target="blank">GitHub Pages</a></li>
+            </ul>
+       
+
+        
+            <ul class="c-footer__list2">
+                <li class="c-footer__item"><div class="foot"><span class="foot__span">Birthday</span>GAME</div></li>
+                <li class="c-footer__item"><p>Copyright &copy 2020 BirthdayGAME</p></li>
+            </ul>
+        
+    </footer>
+	
+	
+	
+	<script src="jquery-3.2.1.min.js"></script>
+	<script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+	
+	 
+    
+	
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
